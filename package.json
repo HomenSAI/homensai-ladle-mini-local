@@ -1,0 +1,14 @@
+{
+  "name": "homensai-laedle-mini-local",
+  "version": "0.3.0",
+  "private": true,
+  "description": "Offline order book for the L\u00e4dle farm shop. Android + dependency-free UI.",
+  "scripts": {
+    "test": "node --test tests/*.test.cjs",
+    "preview": "python3 tools/serve.py",
+    "check": "node --check app/src/main/assets/www/core.js && node --check app/src/main/assets/www/ui.js && node --check app/src/main/assets/www/storage.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

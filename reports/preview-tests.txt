@@ -1,0 +1,10 @@
+{
+  "passed": 4,
+  "checks": [
+    "standalone HTML runs its packaged scripts under the actual hash CSP",
+    "standalone hash-authorized stylesheet is applied",
+    "standalone CSP refuses an added unauthorized inline script",
+    "standalone preview completes the setup wizard"
+  ],
+  "mode": "standalone HTML / actual hash CSP / memory storage / desktop Chromium"
+}

@@ -1,0 +1,44 @@
+PASS Mini Local onboarding saves language/shop with no demo orders
+PASS date saves four kinds of unit in one assortment
+PASS mixed order 1.5 kg x 45 + 2 pieces x 12.50 totals EUR 92.50
+PASS partial issue and extra pack save without modifying preorder
+PASS sale total is EUR 80.40 and payment remains zero
+PASS EUR 50 received is separate from EUR 80.40 sold
+PASS reset of paid sale is blocked without losing either record
+PASS preparation separates kg/pieces and displays remaining quantities
+PASS partial collection prevents closing date
+PASS final cumulative sale is EUR 96.50, not double counted
+PASS paid flag follows received amount and stores chosen method
+PASS all-completed date can be closed
+PASS later payment correction is allowed on a closed date
+PASS change history shows dated actions
+PASS mixed-unit overview fits phone: de/light
+PASS mixed-unit overview fits phone: de/dark
+PASS mixed-unit overview fits phone: de/paper
+PASS mixed-unit overview fits phone: de/compact
+PASS mixed-unit overview fits phone: en/light
+PASS mixed-unit overview fits phone: en/dark
+PASS mixed-unit overview fits phone: en/paper
+PASS mixed-unit overview fits phone: en/compact
+PASS mixed-unit overview fits phone: ru/light
+PASS mixed-unit overview fits phone: ru/dark
+PASS mixed-unit overview fits phone: ru/paper
+PASS mixed-unit overview fits phone: ru/compact
+PASS preparation on tablet fits without horizontal scroll
+PASS mixed-unit preparation fits 320px with 150% text
+PASS own image is resized to 512px and EXIF removed
+PASS own photo appears on product card
+PASS removing photo restores schematic image
+PASS browser reload exposes draft without committing unfinished date
+PASS restored form retains title and line values
+PASS explicit save commits restored draft and removes draft record
+PASS fractional pieces rejected visibly, saved sale unchanged
+PASS no page-level JavaScript exceptions
+{
+  "version": "0.3.0",
+  "mode": "Desktop Chromium; exact preview CSP; in-memory persistence; NOT Android",
+  "passed": 36,
+  "failed": 0,
+  "pageErrors": [],
+  "fatalError": null
+}

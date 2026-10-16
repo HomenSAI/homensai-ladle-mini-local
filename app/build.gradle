@@ -1,0 +1,48 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'com.homensai.laedle'
+    compileSdk 36
+    defaultConfig {
+        applicationId 'com.homensai.laedle.minilocal'
+        minSdk 26
+        targetSdk 36
+        versionCode 3
+        versionName '0.3.0'
+        testInstrumentationRunner 'com.homensai.laedle.DeviceTests'
+    }
+    buildFeatures { buildConfig true }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    signingConfigs {
+        release {
+            if (System.getenv('LAEDLE_KEYSTORE')) {
+                storeFile file(System.getenv('LAEDLE_KEYSTORE'))
+                storePassword System.getenv('LAEDLE_STORE_PASSWORD')
+                keyAlias System.getenv('LAEDLE_KEY_ALIAS')
+                keyPassword System.getenv('LAEDLE_KEY_PASSWORD')
+            }
+        }
+    }
+    buildTypes {
+        debug {
+            applicationIdSuffix '.debug'
+            versionNameSuffix '-debug'
+            resValue 'string', 'app_name', 'Lädle Mini Local · Test'
+        }
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            resValue 'string', 'app_name', 'Lädle Mini Local'
+        }
+    }
+    lint {
+        abortOnError true
+        checkReleaseBuilds true
+        htmlReport true
+        xmlReport true
+    }
+}
+// No runtime libraries: packaged local assets + platform WebView/SQLite/SAF.

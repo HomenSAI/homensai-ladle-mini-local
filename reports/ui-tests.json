@@ -1,0 +1,162 @@
+{
+  "mode": "offline injected assets + in-memory localStorage",
+  "tests": [
+    {
+      "name": "wizard initially asks for shop data",
+      "status": "passed"
+    },
+    {
+      "name": "wizard blocks empty required shop name",
+      "status": "passed"
+    },
+    {
+      "name": "three-step wizard saves contacts and chosen skin without demo orders",
+      "status": "passed"
+    },
+    {
+      "name": "create a date with two products and German decimal prices",
+      "status": "passed"
+    },
+    {
+      "name": "create buyer and multi-item order with live EUR 42 total",
+      "status": "passed"
+    },
+    {
+      "name": "sale weights start empty and blank fields cannot be recorded",
+      "status": "passed"
+    },
+    {
+      "name": "actual sale at 1.8 kg records EUR 27 and preserves 2 kg preorder",
+      "status": "passed"
+    },
+    {
+      "name": "date totals and per-product allocations show plan and actual separately",
+      "status": "passed"
+    },
+    {
+      "name": "completed date can be closed and editing controls disappear",
+      "status": "passed"
+    },
+    {
+      "name": "closed date can be reopened explicitly",
+      "status": "passed"
+    },
+    {
+      "name": "copy assortment creates an empty independent date",
+      "status": "passed"
+    },
+    {
+      "name": "date dropdown restores only that date’s totals",
+      "status": "passed"
+    },
+    {
+      "name": "no horizontal overflow at 412px",
+      "status": "passed"
+    },
+    {
+      "name": "fresh UI instance reloads the exact saved snapshot",
+      "status": "passed"
+    },
+    {
+      "name": "demo date displays three complete customer cards",
+      "status": "passed"
+    },
+    {
+      "name": "demo totals display EUR 139.50",
+      "status": "passed"
+    },
+    {
+      "name": "name search filters customer cards without losing input focus",
+      "status": "passed"
+    },
+    {
+      "name": "product filter finds only customers ordering that product",
+      "status": "passed"
+    },
+    {
+      "name": "descending amount sort puts highest order first",
+      "status": "passed"
+    },
+    {
+      "name": "cancelled order stays visible but is excluded from totals",
+      "status": "passed"
+    },
+    {
+      "name": "restoring a cancelled order restores preparation totals",
+      "status": "passed"
+    },
+    {
+      "name": "closing a date with pending orders shows an explanation",
+      "status": "passed"
+    },
+    {
+      "name": "unsaved edits require explicit discard and are not silently saved",
+      "status": "passed"
+    },
+    {
+      "name": "duplicate customer error preserves all saved orders",
+      "status": "passed"
+    },
+    {
+      "name": "light skin persists and renders both views without changing data",
+      "status": "passed"
+    },
+    {
+      "name": "dark skin persists and renders both views without changing data",
+      "status": "passed"
+    },
+    {
+      "name": "paper skin persists and renders both views without changing data",
+      "status": "passed"
+    },
+    {
+      "name": "compact skin persists and renders both views without changing data",
+      "status": "passed"
+    },
+    {
+      "name": "Russian UI can be selected without changing orders",
+      "status": "passed"
+    },
+    {
+      "name": "English UI can be selected without changing orders",
+      "status": "passed"
+    },
+    {
+      "name": "customer and product views fit 320px viewport",
+      "status": "passed"
+    },
+    {
+      "name": "customer and product views fit 360px viewport",
+      "status": "passed"
+    },
+    {
+      "name": "customer and product views fit 800px viewport",
+      "status": "passed"
+    },
+    {
+      "name": "150% text scaling does not introduce horizontal scrolling",
+      "status": "passed"
+    },
+    {
+      "name": "HTML-like shop and customer names are displayed as text, not executed",
+      "status": "passed"
+    },
+    {
+      "name": "corrupted browser snapshot is not deleted or silently reset",
+      "status": "passed"
+    },
+    {
+      "name": "no JavaScript errors in all completed UI scenarios",
+      "status": "passed"
+    }
+  ],
+  "passed": 37,
+  "failed": 0,
+  "pageErrors": [],
+  "notCovered": [
+    "Android APK compilation",
+    "Android WebView runtime",
+    "native SQLite",
+    "native Storage Access Framework"
+  ]
+}

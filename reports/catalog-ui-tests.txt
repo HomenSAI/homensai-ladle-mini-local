@@ -1,0 +1,46 @@
+PASS wizard offers translated catalog opt-in, without automatic prices
+PASS setup adds 91 templates and no dates or customer records
+PASS catalog renders 40 illustrated cards initially
+PASS 51 active cards can be displayed
+PASS all 91 templates remain available
+PASS category filter returns nine lamb cuts
+PASS Russian product search works in German interface
+PASS rename and decimal comma template price save
+PASS deactivate card persists inactive status
+PASS inactive filter shows deactivated card
+PASS activate card persists active status
+PASS catalog readable at 360px: de, light
+PASS catalog readable at 360px: de, dark
+PASS catalog readable at 360px: de, paper
+PASS catalog readable at 360px: de, compact
+PASS catalog readable at 360px: en, light
+PASS catalog readable at 360px: en, dark
+PASS catalog readable at 360px: en, paper
+PASS catalog readable at 360px: en, compact
+PASS catalog readable at 360px: ru, light
+PASS catalog readable at 360px: ru, dark
+PASS catalog readable at 360px: ru, paper
+PASS catalog readable at 360px: ru, compact
+PASS catalog 320px with 150% text has no horizontal overflow
+PASS date picker takes the catalog price
+PASS date draft includes product illustration
+PASS date stores a frozen catalog snapshot
+PASS order uses exact snapshot price 1.5 kg x 45 euro
+PASS renaming and repricing master preserves old order and date
+PASS deletion of used product archives it and keeps order
+PASS archived card remains discoverable
+PASS restore from archive returns an inactive template
+PASS inactive dated article cannot start new order
+PASS deactivation retains 1.5kg preparation and visible illustration
+PASS actual sale still works for deactivated product
+PASS custom product names render as literal text, not executable markup
+PASS unused custom product really deletes
+PASS no JavaScript exceptions in catalog scenarios
+{
+  "version": "0.3.0",
+  "mode": "Desktop Chromium / actual preview hash CSP / memory storage / NOT Android",
+  "passed": 38,
+  "failed": 0,
+  "pageErrors": [],
+  "fatalError": null
+}

@@ -1,0 +1,417 @@
+{
+  "unitLabel": [
+    "Einheit",
+    "Единица измерения",
+    "Unit"
+  ],
+  "unit.kg": [
+    "kg",
+    "кг",
+    "kg"
+  ],
+  "unit.piece": [
+    "Stk.",
+    "шт.",
+    "pcs"
+  ],
+  "unit.pack": [
+    "Pack.",
+    "упак.",
+    "packs"
+  ],
+  "unit.litre": [
+    "l",
+    "л",
+    "L"
+  ],
+  "quantity": [
+    "Menge",
+    "Количество",
+    "Quantity"
+  ],
+  "actualQuantity": [
+    "Tatsächliche Menge",
+    "Фактическое количество",
+    "Actual quantity"
+  ],
+  "actualPrice": [
+    "Tatsächlicher Preis (€)",
+    "Фактическая цена (€)",
+    "Actual price (€)"
+  ],
+  "pricePerKg": [
+    "Preis je Einheit (€)",
+    "Цена за единицу (€)",
+    "Price per unit (€)"
+  ],
+  "catalogPrice": [
+    "Standardpreis je Einheit (€), optional",
+    "Цена за единицу (€), необязательно",
+    "Default unit price (€), optional"
+  ],
+  "quantityUnitNotice": [
+    "kg/l: bis zu 3 Nachkommastellen; Stück/Packung: ganze Zahlen.",
+    "Кг/л: до 3 знаков после запятой; штуки/упаковки: целые числа.",
+    "kg/L: up to 3 decimals; pieces/packs: whole numbers."
+  ],
+  "catalogSetupHint": [
+    "91 editierbare Vorlagen. Aktiv: Jungrind, Rind, Lamm, Huhn und Wild. Keine vorgegebenen Preise.",
+    "91 редактируемый шаблон. Включены молодая говядина, говядина, баранина, курица и дичь. Цены не заданы.",
+    "91 editable templates. Young beef, beef, lamb, chicken and game are active. No preset prices."
+  ],
+  "catalogHint": [
+    "Ihr lokaler Artikelkatalog. Aktive Vorlagen können zu einem Termin hinzugefügt werden.",
+    "Локальный каталог товаров. Активные шаблоны можно добавлять на дату выдачи.",
+    "Your local product catalog. Add active templates to a pickup date."
+  ],
+  "catalogImages": [
+    "Schematische Bilder, keine Fotos dieses Hofladens. Eigene Fotos sind möglich.",
+    "Схематичные изображения, не фотографии этого магазина. Можно добавить свои фото.",
+    "Schematic illustrations, not photographs of this shop. You may add your own photos."
+  ],
+  "privacySetup": [
+    "Nur dieses Gerät. Keine Konten, Cloud oder Nachrichten. EUR · kg, Stück, Packung, Liter.",
+    "Только это устройство. Без аккаунтов, облака и рассылок. EUR · кг, штуки, упаковки, литры.",
+    "This device only. No accounts, cloud or messaging. EUR · kg, pieces, packs, litres."
+  ],
+  "ownPhoto": [
+    "Eigenes Produktfoto",
+    "Своё фото товара",
+    "Your product photo"
+  ],
+  "choosePhoto": [
+    "Foto auswählen",
+    "Выбрать фото",
+    "Choose photo"
+  ],
+  "removePhoto": [
+    "Foto entfernen",
+    "Удалить фото",
+    "Remove photo"
+  ],
+  "photoHint": [
+    "Das gewählte Bild wird als kleines JPEG ohne EXIF gespeichert und in die Sicherung aufgenommen.",
+    "Выбранное фото сохраняется уменьшенным JPEG без EXIF и входит в резервную копию.",
+    "The selected image is saved as a small JPEG without EXIF and included in backups."
+  ],
+  "payment": [
+    "Zahlung",
+    "Оплата",
+    "Payment"
+  ],
+  "received": [
+    "Erhalten",
+    "Получено денег",
+    "Received"
+  ],
+  "balance": [
+    "Noch offen",
+    "К доплате",
+    "Balance due"
+  ],
+  "paid": [
+    "Bezahlt",
+    "Оплачено",
+    "Paid"
+  ],
+  "unpaid": [
+    "Nicht bezahlt",
+    "Не оплачено",
+    "Unpaid"
+  ],
+  "partPaid": [
+    "Teilweise bezahlt",
+    "Частично оплачено",
+    "Part-paid"
+  ],
+  "notSold": [
+    "Noch kein Verkauf",
+    "Продажа ещё не внесена",
+    "No sale yet"
+  ],
+  "editPayment": [
+    "Zahlung erfassen / korrigieren",
+    "Внести / исправить оплату",
+    "Record / correct payment"
+  ],
+  "paymentHint": [
+    "Gesamten bisher erhaltenen Betrag eintragen, nicht nur die neue Teilzahlung. Keine Kassenfunktion.",
+    "Введите всю полученную сумму, а не только очередной платёж. Это не касса.",
+    "Enter the total received so far, not just the latest instalment. This is not a cash register."
+  ],
+  "paymentMethod": [
+    "Zahlungsart",
+    "Способ оплаты",
+    "Payment method"
+  ],
+  "method.cash": [
+    "Bar",
+    "Наличные",
+    "Cash"
+  ],
+  "method.card": [
+    "Karte (nur Vermerk)",
+    "Карта (только отметка)",
+    "Card (record only)"
+  ],
+  "method.other": [
+    "Andere",
+    "Другое",
+    "Other"
+  ],
+  "partial": [
+    "Teilweise ausgegeben",
+    "Частично выдано",
+    "Partly collected"
+  ],
+  "completeSale": [
+    "Ausgabe abgeschlossen",
+    "Выдача завершена",
+    "Collection complete"
+  ],
+  "cumulativeHint": [
+    "Bei Teilabholung immer die insgesamt bereits ausgegebene Menge eintragen. Nicht erneut addieren.",
+    "При частичной выдаче вносите общее уже выданное количество. Не добавляйте его повторно.",
+    "For partial collection enter cumulative quantities already handed over. Do not add them again."
+  ],
+  "extraSale": [
+    "Zusätzlicher Kauf ohne Vorbestellung",
+    "Дополнительная покупка без предзаказа",
+    "Additional purchase, not preordered"
+  ],
+  "addExtraSale": [
+    "Weiteren Artikel verkaufen",
+    "Добавить покупку при выдаче",
+    "Add an item at collection"
+  ],
+  "remaining": [
+    "Noch vorzubereiten",
+    "Ещё подготовить",
+    "Still to prepare"
+  ],
+  "audit": [
+    "Änderungsverlauf",
+    "Журнал изменений",
+    "Change history"
+  ],
+  "auditHint": [
+    "Letzte 100 Aktionen dieses Geräts. Beträge in den Details: Cent. Kein manipulationssicheres Kassenjournal.",
+    "Последние 100 действий на этом устройстве. Суммы в подробностях — в центах. Это не защищённый фискальный журнал.",
+    "Latest 100 actions on this device. Detail amounts are cents. Not a tamper-proof fiscal journal."
+  ],
+  "details": [
+    "Details",
+    "Подробности",
+    "Details"
+  ],
+  "draftAvailable": [
+    "Nicht gespeicherter Entwurf gefunden.",
+    "Найден несохранённый черновик.",
+    "An unsaved draft was found."
+  ],
+  "resumeDraft": [
+    "Entwurf fortsetzen",
+    "Продолжить черновик",
+    "Resume draft"
+  ],
+  "discardDraft": [
+    "Entwurf löschen",
+    "Удалить черновик",
+    "Discard draft"
+  ],
+  "draftWriteError": [
+    "Entwurf konnte nicht automatisch gespeichert werden. Bitte ausdrücklich speichern.",
+    "Не удалось сохранить черновик автоматически. Сохраните запись кнопкой.",
+    "Could not save draft automatically. Please save the record explicitly."
+  ],
+  "recoverHistory": [
+    "Lokale Vorversion wiederherstellen",
+    "Восстановить локальную версию",
+    "Recover local version"
+  ],
+  "recoverHint": [
+    "Ersetzt den aktuellen Stand durch eine geprüfte frühere Speicherung. Neuere Änderungen können verloren gehen.",
+    "Заменит текущие данные проверенным предыдущим сохранением. Более новые изменения могут пропасть.",
+    "Replaces current data with a validated previous save. More recent changes may be lost."
+  ],
+  "revision": [
+    "Stand",
+    "Версия",
+    "Revision"
+  ],
+  "error.unit": [
+    "Ungültige Einheit.",
+    "Некорректная единица измерения.",
+    "Invalid unit."
+  ],
+  "error.wholeQuantity": [
+    "Stück und Packungen nur als ganze Zahlen eingeben.",
+    "Штуки и упаковки вводятся целыми числами.",
+    "Enter whole numbers for pieces and packs."
+  ],
+  "error.usedUnit": [
+    "Einheit eines bestellten Artikels nicht ändern. Neue Position anlegen.",
+    "Нельзя менять единицу уже заказанного товара. Создайте новую позицию.",
+    "Cannot change unit of an ordered item. Create a new item."
+  ],
+  "error.photo": [
+    "Bild nicht lesbar oder zu groß. JPEG/PNG/WebP bis 10 MB auswählen.",
+    "Фото не читается или слишком велико. Выберите JPEG/PNG/WebP до 10 МБ.",
+    "Unreadable or oversized image. Select JPEG/PNG/WebP up to 10 MB."
+  ],
+  "error.payment": [
+    "Zahlung erst nach Erfassung des Verkaufs möglich.",
+    "Оплату можно внести после записи фактической продажи.",
+    "Record the actual sale before entering payment."
+  ],
+  "error.overpayment": [
+    "Erhaltener Betrag darf den Verkaufsbetrag nicht übersteigen. Bei einer Korrektur zuerst die Zahlung anpassen.",
+    "Полученная сумма не должна превышать сумму продажи. При исправлении сначала скорректируйте оплату.",
+    "Received amount cannot exceed the sale. When correcting a sale, adjust payment first."
+  ],
+  "error.paymentFirst": [
+    "Zuerst die erfasste Zahlung auf null korrigieren.",
+    "Сначала исправьте внесённую оплату на ноль.",
+    "Correct the recorded payment to zero first."
+  ],
+  "error.extraUnavailable": [
+    "Keine weiteren aktiven Artikel an diesem Termin. Sortiment zuerst bearbeiten.",
+    "На этой дате нет других активных товаров. Сначала измените ассортимент даты.",
+    "No other active items for this date. Edit its assortment first."
+  ],
+  "error.auditLimit": [
+    "Verlaufsgrenze erreicht. Sicherung erstellen und Entwickler kontaktieren. Keine Daten wurden gelöscht.",
+    "Достигнут предел журнала. Создайте копию и обратитесь к разработчику. Данные не удалены.",
+    "History limit reached. Back up and contact the developer. Nothing was deleted."
+  ],
+  "error.audit": [
+    "Ungültiger Änderungsverlauf.",
+    "Некорректный журнал изменений.",
+    "Invalid change history."
+  ],
+  "error.staleDraft": [
+    "Daten seit dem Entwurf geändert. Entwurf verwerfen und neu beginnen.",
+    "После создания черновика данные изменились. Удалите его и начните заново.",
+    "Data changed after this draft. Discard it and start again."
+  ],
+  "error.noHistory": [
+    "Keine geprüfte Vorversion vorhanden. Externe Sicherung verwenden.",
+    "Нет проверенного предыдущего сохранения. Используйте внешнюю копию.",
+    "No valid prior version. Use an external backup."
+  ],
+  "offline": [
+    "Mini Local · nur dieses Gerät",
+    "Mini Local · только это устройство",
+    "Mini Local · this device only"
+  ],
+  "aboutText": [
+    "Lokales Bestellbuch für einen Hofladen. Keine Anmeldung, Server oder Synchronisierung. Vorbestellung, Ausgabe und Zahlung sind getrennt.",
+    "Локальная тетрадь заказов фермерского магазина. Без аккаунтов, сервера и синхронизации. Предзаказ, выдача и оплата разделены.",
+    "Local farm-shop order book. No accounts, server or sync. Preorders, collection and payments are separate."
+  ],
+  "audit.setup": [
+    "Laden eingerichtet",
+    "Настроен магазин",
+    "Shop setup"
+  ],
+  "audit.updateShop": [
+    "Laden / Darstellung geändert",
+    "Изменены магазин / оформление",
+    "Shop / appearance changed"
+  ],
+  "audit.saveEvent": [
+    "Termin gespeichert",
+    "Сохранена дата",
+    "Date saved"
+  ],
+  "audit.copyEvent": [
+    "Termin kopiert",
+    "Скопирована дата",
+    "Date copied"
+  ],
+  "audit.deleteEvent": [
+    "Termin gelöscht",
+    "Удалена дата",
+    "Date deleted"
+  ],
+  "audit.saveOrder": [
+    "Bestellung gespeichert",
+    "Сохранён заказ",
+    "Order saved"
+  ],
+  "audit.updateCustomer": [
+    "Kontakt geändert",
+    "Изменён контакт",
+    "Contact changed"
+  ],
+  "audit.saveSale": [
+    "Ausgabe gespeichert",
+    "Сохранена выдача",
+    "Collection saved"
+  ],
+  "audit.cancelOrder": [
+    "Bestellstatus geändert",
+    "Изменён статус заказа",
+    "Order status changed"
+  ],
+  "audit.clearSale": [
+    "Verkauf zurückgesetzt",
+    "Сброшена продажа",
+    "Sale reset"
+  ],
+  "audit.setClosed": [
+    "Terminstatus geändert",
+    "Изменён статус даты",
+    "Date status changed"
+  ],
+  "audit.seedCatalog": [
+    "Vorlagen ergänzt",
+    "Добавлены шаблоны",
+    "Templates added"
+  ],
+  "audit.saveCatalogProduct": [
+    "Artikel gespeichert",
+    "Сохранён товар",
+    "Product saved"
+  ],
+  "audit.setCatalogActive": [
+    "Artikelaktivität geändert",
+    "Изменена активность товара",
+    "Product activation changed"
+  ],
+  "audit.deleteCatalogProduct": [
+    "Artikel entfernt / archiviert",
+    "Товар удалён / архивирован",
+    "Product removed / archived"
+  ],
+  "audit.restoreCatalogProduct": [
+    "Artikel wiederhergestellt",
+    "Восстановлен товар",
+    "Product restored"
+  ],
+  "audit.savePayment": [
+    "Zahlung gespeichert",
+    "Сохранена оплата",
+    "Payment saved"
+  ],
+  "sortWeight": [
+    "Gewicht (nur kg)",
+    "Вес (только кг)",
+    "Weight (kg only)"
+  ],
+  "sortQuantity": [
+    "Einheit & Menge",
+    "Единица и количество",
+    "Unit & quantity"
+  ],
+  "noDatesHint": [
+    "Legen Sie einen Abholtermin mit Artikeln, Einheiten und Preisen an.",
+    "Добавьте дату выдачи, товары, единицы и цены.",
+    "Create a pickup date with products, units and prices."
+  ],
+  "prepareHint": [
+    "Gesamtmengen aller nicht stornierten Bestellungen dieses Termins. Tippen Sie auf einen Artikel für die Aufteilung je Kunde.",
+    "Общее количество каждого товара на выбранную дату без отменённых заказов. Нажмите на товар, чтобы увидеть распределение по покупателям.",
+    "Total quantities of all non-cancelled orders for this date. Tap a product to see each customer’s allocation."
+  ]
+}

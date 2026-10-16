@@ -1,0 +1,44 @@
+# Gradle and Android build output
+.gradle/
+**/.gradle/
+.tools/
+**/build/
+local.properties
+*.apk
+*.aab
+*.ap_
+*.aar
+*.dex
+mapping.txt
+output-metadata.json
+
+# Signing keys and local credentials
+*.jks
+*.keystore
+*.p12
+*.pfx
+signing.properties
+**/signing.properties
+.env
+.env.*
+!.env.example
+*.token
+*.credentials
+
+# Device-local shop data and drafts
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.ladle
+
+# Dependencies, editors, and operating-system files
+node_modules/
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.iml

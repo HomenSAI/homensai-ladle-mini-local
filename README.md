@@ -1,2 +1,37 @@
-# homensai-l-dle-mini-local
-HomenS.AI Lädle Mini Local is an offline Android app for farm shop order management. It replaces paper records with customer orders, product catalogs, pickup dates, weight calculations, sales tracking and payment records. Features four themes, three languages (EN/DE/RU), local storage and encrypted backups. No server or internet required.
+# HomenS.AI · Lädle Mini Local 0.3.0
+
+**Languages / Sprachen / Языки:** [EN](README_EN.md) · [DE](README_DE.md) · RU
+
+**Локальная электронная тетрадь заказов фермерского магазина. Один телефон или планшет, без сервера, регистрации, подписки, рассылки и синхронизации.** DE · EN · RU, четыре скина.
+
+## Статус поставки
+
+Это исходный Android-проект и самостоятельная браузерная демонстрация, **не готовый установочный APK**. APK и Android Lint не запускались: SDK/Gradle/эмулятор отсутствуют, загрузка Gradle закончилась DNS-ошибкой. Виртуальный и реальный Android не проверены. Не использовать реальные клиентские данные до Android-приёмки.
+
+**Начните с `START_HERE_RU.md`.** Краткие руководства: `docs/USER_GUIDE_RU.md`, `docs/USER_GUIDE_DE.md`, `docs/USER_GUIDE_EN.md`. Стандарт локализации разработки: `docs/LOCALIZATION.md`. Браузерная демонстрация: `preview/Laedle-preview.html`. Тесты: `docs/TEST_REPORT.md`; установка после сборки: `docs/BUILD.md`; проверка телефона: `docs/ACCEPTANCE.md`.
+
+## Возможности
+
+Мастер магазина; список дат; ассортимент с ценами и единицами; клиентские карточки и предзаказы; сводка подготовки; первоначальный план и фактическая выдача отдельно; частичная выдача; дополнительные позиции при получении; учёт полученных денег отдельно от выдачи; поиск, сортировка, отмены, закрытие и повторное открытие даты.
+
+Каталог: 91 редактируемый шаблон, 16 групп, 16 схематичных иллюстраций, личные фотографии. Для новой установки включена 51 карточка: молодая говядина, говядина, баранина, курица, кабан, оленина. Кролик и другие группы доступны, но отключены. Никаких вымышленных цен. Мастер отдельно предлагает вымышленные демонстрационные заказы — по умолчанию не включает.
+
+Данные сохраняются локально; добавлены авточерновик, журнал изменений, пять предыдущих снимков для аварийного восстановления и резервная копия под паролем. **Восстановление на Android подготовлено в коде, но ещё не испытано на устройстве.**
+
+## Устройство проекта
+
+`core.js` — правила/расчёты; `ui.js` — интерфейс; `storage.js` — репозитории и шифрование экспортов; Java — локальные ресурсы WebView, SQLite, файловый выбор, безопасный импорт фотографии. Нет npm runtime-зависимостей и внешних шрифтов.
+
+```sh
+npm test
+python3 tools/check.py
+python3 tools/make_preview.py
+python3 tests/ui_test.py --in-memory
+python3 tests/catalog_ui_test.py
+python3 tests/mini_ui_test.py
+python3 tests/preview_test.py
+```
+
+UI-тестам нужны Python, Playwright/Chromium и Pillow; Node-тестам — Node 20+. Успешные тесты браузера **не означают успешное испытание Android**.
+
+Сборка на компьютере с JDK 17/21, Android SDK 36, Build Tools 35.0.0, Python 3.10+: `BUILD_APK_WINDOWS.cmd` или `bash BUILD_APK.sh`. Первая сборка требует интернета для инструментов; приложение после установки сервера не использует.

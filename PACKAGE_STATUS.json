@@ -1,0 +1,34 @@
+{
+  "product": "HomenS.AI Lädle Mini Local",
+  "version": "0.3.0",
+  "schemaVersion": 3,
+  "sqliteVersion": 2,
+  "scope": "one device, offline, no backend",
+  "sourcePackage": true,
+  "apkIncluded": false,
+  "androidBuildSucceeded": false,
+  "androidEmulatorTested": false,
+  "nativeTestsPrepared": 25,
+  "nativeTestsExecuted": 0,
+  "nodeTests": {
+    "passed": 174,
+    "failed": 0
+  },
+  "browserSuites": {
+    "regression": 37,
+    "catalog": 38,
+    "mini": 36,
+    "preview": 4
+  },
+  "sourceChecks": 31,
+  "latestVerification": {
+    "nodeTests": "174 passed when loaded in one process; npm test was blocked by spawn EPERM",
+    "sourceChecks": "31 checks passed; remaining Java checks were blocked because javac is unavailable",
+    "browserSuites": "Not run: Python Playwright module is not installed"
+  },
+  "translationKeys": 331,
+  "catalogTemplates": 91,
+  "activeOnFreshSetup": 51,
+  "screenshots": "Desktop Chromium, not Android",
+  "releaseGate": "BLOCKED: Android build and device acceptance not executed"
+}

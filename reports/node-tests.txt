@@ -1,0 +1,1058 @@
+
+> homensai-laedle-mini-local@0.3.0 test
+> node --test tests/*.test.cjs
+
+TAP version 13
+# Subtest: catalog has 91 templates and 15 translated categories
+ok 1 - catalog has 91 templates and 15 translated categories
+  ---
+  duration_ms: 1.005171
+  type: 'test'
+  ...
+# Subtest: all templates have 3 names, known image and no fabricated prices
+ok 2 - all templates have 3 names, known image and no fabricated prices
+  ---
+  duration_ms: 0.376836
+  type: 'test'
+  ...
+# Subtest: 16 original vector illustrations contain no scripts or external content
+ok 3 - 16 original vector illustrations contain no scripts or external content
+  ---
+  duration_ms: 0.271428
+  type: 'test'
+  ...
+# Subtest: template IDs are unique
+ok 4 - template IDs are unique
+  ---
+  duration_ms: 1.082878
+  type: 'test'
+  ...
+# Subtest: initial setup seeds templates, never dates, customers or orders
+ok 5 - initial setup seeds templates, never dates, customers or orders
+  ---
+  duration_ms: 4.549559
+  type: 'test'
+  ...
+# Subtest: wizard can opt out of templates
+ok 6 - wizard can opt out of templates
+  ---
+  duration_ms: 0.232549
+  type: 'test'
+  ...
+# Subtest: seeding never overwrites renamed or deactivated templates
+ok 7 - seeding never overwrites renamed or deactivated templates
+  ---
+  duration_ms: 6.205719
+  type: 'test'
+  ...
+# Subtest: custom catalog card can be created
+ok 8 - custom catalog card can be created
+  ---
+  duration_ms: 1.939466
+  type: 'test'
+  ...
+# Subtest: catalog updates do not mutate source
+ok 9 - catalog updates do not mutate source
+  ---
+  duration_ms: 3.197146
+  type: 'test'
+  ...
+# Subtest: disabled template cannot create a new date item
+ok 10 - disabled template cannot create a new date item
+  ---
+  duration_ms: 2.956474
+  type: 'test'
+  ...
+# Subtest: template can be reactivated
+ok 11 - template can be reactivated
+  ---
+  duration_ms: 2.956454
+  type: 'test'
+  ...
+# Subtest: date item requires price when template price is absent
+ok 12 - date item requires price when template price is absent
+  ---
+  duration_ms: 0.743668
+  type: 'test'
+  ...
+# Subtest: explicit zero price is distinct from missing price
+ok 13 - explicit zero price is distinct from missing price
+  ---
+  duration_ms: 0.710698
+  type: 'test'
+  ...
+# Subtest: negative and fractional cents cannot be saved
+ok 14 - negative and fractional cents cannot be saved
+  ---
+  duration_ms: 10.106983
+  type: 'test'
+  ...
+# Subtest: unknown image keys and SVG payloads rejected
+ok 15 - unknown image keys and SVG payloads rejected
+  ---
+  duration_ms: 9.621784
+  type: 'test'
+  ...
+# Subtest: unknown categories are rejected
+ok 16 - unknown categories are rejected
+  ---
+  duration_ms: 2.344304
+  type: 'test'
+  ...
+# Subtest: name validation and fallback
+ok 17 - name validation and fallback
+  ---
+  duration_ms: 2.367609
+  type: 'test'
+  ...
+# Subtest: date snapshots include all localized names and image key
+ok 18 - date snapshots include all localized names and image key
+  ---
+  duration_ms: 4.775068
+  type: 'test'
+  ...
+# Subtest: price and name changes in catalog do not change existing orders or dates
+ok 19 - price and name changes in catalog do not change existing orders or dates
+  ---
+  duration_ms: 9.191717
+  type: 'test'
+  ...
+# Subtest: order preserves localized names after catalog change
+ok 20 - order preserves localized names after catalog change
+  ---
+  duration_ms: 5.487829
+  type: 'test'
+  ...
+# Subtest: unused template is permanently deleted
+ok 21 - unused template is permanently deleted
+  ---
+  duration_ms: 2.824536
+  type: 'test'
+  ...
+# Subtest: used template is archived, event and order totals survive
+ok 22 - used template is archived, event and order totals survive
+  ---
+  duration_ms: 7.154735
+  type: 'test'
+  ...
+# Subtest: archived template must be restored before editing or activating
+ok 23 - archived template must be restored before editing or activating
+  ---
+  duration_ms: 5.581144
+  type: 'test'
+  ...
+# Subtest: restoration leaves template inactive
+ok 24 - restoration leaves template inactive
+  ---
+  duration_ms: 4.348287
+  type: 'test'
+  ...
+# Subtest: template seed does not revive archived item
+ok 25 - template seed does not revive archived item
+  ---
+  duration_ms: 4.032271
+  type: 'test'
+  ...
+# Subtest: per-date deactivation preserves preparation, blocks new customer order
+ok 26 - per-date deactivation preserves preparation, blocks new customer order
+  ---
+  duration_ms: 4.681597
+  type: 'test'
+  ...
+# Subtest: existing order on disabled item can still be fulfilled
+ok 27 - existing order on disabled item can still be fulfilled
+  ---
+  duration_ms: 5.772968
+  type: 'test'
+  ...
+# Subtest: catalog activation is separate from dated availability
+ok 28 - catalog activation is separate from dated availability
+  ---
+  duration_ms: 3.424598
+  type: 'test'
+  ...
+# Subtest: copying date keeps catalog link, image, translations and new item ID
+ok 29 - copying date keeps catalog link, image, translations and new item ID
+  ---
+  duration_ms: 4.028276
+  type: 'test'
+  ...
+# Subtest: deleting linked template from imported state is rejected
+ok 30 - deleting linked template from imported state is rejected
+  ---
+  duration_ms: 2.824866
+  type: 'test'
+  ...
+# Subtest: duplicate catalog IDs and invalid state booleans are rejected
+ok 31 - duplicate catalog IDs and invalid state booleans are rejected
+  ---
+  duration_ms: 1.595568
+  type: 'test'
+  ...
+# Subtest: legacy migration preserves all dated data and does not inject stock
+ok 32 - legacy migration preserves all dated data and does not inject stock
+  ---
+  duration_ms: 2.732668
+  type: 'test'
+  ...
+# Subtest: future schema is rejected without reset
+ok 33 - future schema is rejected without reset
+  ---
+  duration_ms: 0.162144
+  type: 'test'
+  ...
+# Subtest: legacy storage load upgrades in memory without overwriting raw file
+ok 34 - legacy storage load upgrades in memory without overwriting raw file
+  ---
+  duration_ms: 2.443373
+  type: 'test'
+  ...
+# Subtest: native adapter upgrades schema 1 snapshots before rendering
+ok 35 - native adapter upgrades schema 1 snapshots before rendering
+  ---
+  duration_ms: 2.576543
+  type: 'test'
+  ...
+# Subtest: encrypted v2 backup round-trips archived catalog and order snapshots
+ok 36 - encrypted v2 backup round-trips archived catalog and order snapshots
+  ---
+  duration_ms: 143.859483
+  type: 'test'
+  ...
+# Subtest: all 331 UI dictionary keys exist in all three languages
+ok 37 - all 331 UI dictionary keys exist in all three languages
+  ---
+  duration_ms: 1.684833
+  type: 'test'
+  ...
+# Subtest: empty state is valid and no demo data is inserted implicitly
+ok 38 - empty state is valid and no demo data is inserted implicitly
+  ---
+  duration_ms: 4.175467
+  type: 'test'
+  ...
+# Subtest: wizard preserves all shop data and trims strings
+ok 39 - wizard preserves all shop data and trims strings
+  ---
+  duration_ms: 3.531087
+  type: 'test'
+  ...
+# Subtest: shop name is required
+ok 40 - shop name is required
+  ---
+  duration_ms: 0.448674
+  type: 'test'
+  ...
+# Subtest: invalid email is rejected
+ok 41 - invalid email is rejected
+  ---
+  duration_ms: 0.146059
+  type: 'test'
+  ...
+# Subtest: all four skins persist and leave orders unchanged
+ok 42 - all four skins persist and leave orders unchanged
+  ---
+  duration_ms: 13.7836
+  type: 'test'
+  ...
+# Subtest: unsupported currency is rejected
+ok 43 - unsupported currency is rejected
+  ---
+  duration_ms: 1.119262
+  type: 'test'
+  ...
+# Subtest: setup cannot silently replace an existing shop
+ok 44 - setup cannot silently replace an existing shop
+  ---
+  duration_ms: 0.915777
+  type: 'test'
+  ...
+# Subtest: German comma weights parse exactly
+ok 45 - German comma weights parse exactly
+  ---
+  duration_ms: 0.197457
+  type: 'test'
+  ...
+# Subtest: decimal point weights parse exactly
+ok 46 - decimal point weights parse exactly
+  ---
+  duration_ms: 0.282665
+  type: 'test'
+  ...
+# Subtest: prices have at most two decimal places
+ok 47 - prices have at most two decimal places
+  ---
+  duration_ms: 0.413151
+  type: 'test'
+  ...
+# Subtest: negative, exponent and mixed grouping syntax rejected
+ok 48 - negative, exponent and mixed grouping syntax rejected
+  ---
+  duration_ms: 0.327092
+  type: 'test'
+  ...
+# Subtest: four weight decimal places rejected instead of rounding
+ok 49 - four weight decimal places rejected instead of rounding
+  ---
+  duration_ms: 0.132499
+  type: 'test'
+  ...
+# Subtest: zero preorder is forbidden but explicit zero sale is allowed
+ok 50 - zero preorder is forbidden but explicit zero sale is allowed
+  ---
+  duration_ms: 0.480733
+  type: 'test'
+  ...
+# Subtest: upper quantity bound enforced
+ok 51 - upper quantity bound enforced
+  ---
+  duration_ms: 0.112859
+  type: 'test'
+  ...
+# Subtest: upper price bound enforced
+ok 52 - upper price bound enforced
+  ---
+  duration_ms: 0.084998
+  type: 'test'
+  ...
+# Subtest: zero price is valid
+ok 53 - zero price is valid
+  ---
+  duration_ms: 0.058889
+  type: 'test'
+  ...
+# Subtest: half-cent rounding is per line and half up
+ok 54 - half-cent rounding is per line and half up
+  ---
+  duration_ms: 0.050907
+  type: 'test'
+  ...
+# Subtest: 1.8 kg at EUR 15 is exactly EUR 27
+ok 55 - 1.8 kg at EUR 15 is exactly EUR 27
+  ---
+  duration_ms: 0.047791
+  type: 'test'
+  ...
+# Subtest: 5000 seeded price/weight cases match an independent BigInt oracle
+ok 56 - 5000 seeded price/weight cases match an independent BigInt oracle
+  ---
+  duration_ms: 5.874521
+  type: 'test'
+  ...
+# Subtest: line amounts are summed after rounding, not averaged
+ok 57 - line amounts are summed after rounding, not averaged
+  ---
+  duration_ms: 0.097717
+  type: 'test'
+  ...
+# Subtest: valid leap dates and invalid calendar dates distinguished
+ok 58 - valid leap dates and invalid calendar dates distinguished
+  ---
+  duration_ms: 0.097817
+  type: 'test'
+  ...
+# Subtest: local-date helper is not UTC date truncation
+ok 59 - local-date helper is not UTC date truncation
+  ---
+  duration_ms: 0.364107
+  type: 'test'
+  ...
+# Subtest: duplicate product names rejected case-insensitively
+ok 60 - duplicate product names rejected case-insensitively
+  ---
+  duration_ms: 2.795903
+  type: 'test'
+  ...
+# Subtest: copy date copies only assortment, with fresh IDs
+ok 61 - copy date copies only assortment, with fresh IDs
+  ---
+  duration_ms: 8.540919
+  type: 'test'
+  ...
+# Subtest: empty dates can be deleted
+ok 62 - empty dates can be deleted
+  ---
+  duration_ms: 3.728695
+  type: 'test'
+  ...
+# Subtest: dates with orders cannot be deleted
+ok 63 - dates with orders cannot be deleted
+  ---
+  duration_ms: 2.96055
+  type: 'test'
+  ...
+# Subtest: order totals are calculated from requested weight
+ok 64 - order totals are calculated from requested weight
+  ---
+  duration_ms: 2.993971
+  type: 'test'
+  ...
+# Subtest: preorder is not counted as revenue, regardless of past date
+ok 65 - preorder is not counted as revenue, regardless of past date
+  ---
+  duration_ms: 3.995005
+  type: 'test'
+  ...
+# Subtest: actual sale never overwrites the requested lines
+ok 66 - actual sale never overwrites the requested lines
+  ---
+  duration_ms: 4.00505
+  type: 'test'
+  ...
+# Subtest: actual prices can differ from snapshots
+ok 67 - actual prices can differ from snapshots
+  ---
+  duration_ms: 3.362915
+  type: 'test'
+  ...
+# Subtest: explicit all-zero sale is fulfilled, not pending
+ok 68 - explicit all-zero sale is fulfilled, not pending
+  ---
+  duration_ms: 3.305209
+  type: 'test'
+  ...
+# Subtest: partially omitted sale lines are rejected
+ok 69 - partially omitted sale lines are rejected
+  ---
+  duration_ms: 2.965678
+  type: 'test'
+  ...
+# Subtest: duplicate actual lines are rejected
+ok 70 - duplicate actual lines are rejected
+  ---
+  duration_ms: 3.636907
+  type: 'test'
+  ...
+# Subtest: negative actual weight is rejected
+ok 71 - negative actual weight is rejected
+  ---
+  duration_ms: 3.20004
+  type: 'test'
+  ...
+# Subtest: cancellation excludes preparation totals but keeps original order
+ok 72 - cancellation excludes preparation totals but keeps original order
+  ---
+  duration_ms: 3.235885
+  type: 'test'
+  ...
+# Subtest: a recorded sale cannot be cancelled directly
+ok 73 - a recorded sale cannot be cancelled directly
+  ---
+  duration_ms: 3.615235
+  type: 'test'
+  ...
+# Subtest: a cancelled order cannot record a sale
+ok 74 - a cancelled order cannot record a sale
+  ---
+  duration_ms: 3.561144
+  type: 'test'
+  ...
+# Subtest: uncancelling restores preparation totals
+ok 75 - uncancelling restores preparation totals
+  ---
+  duration_ms: 4.246723
+  type: 'test'
+  ...
+# Subtest: reset sale preserves plan and returns order to pending
+ok 76 - reset sale preserves plan and returns order to pending
+  ---
+  duration_ms: 4.577961
+  type: 'test'
+  ...
+# Subtest: correcting sale replaces only actual data
+ok 77 - correcting sale replaces only actual data
+  ---
+  duration_ms: 4.652504
+  type: 'test'
+  ...
+# Subtest: closing a date with open orders is blocked
+ok 78 - closing a date with open orders is blocked
+  ---
+  duration_ms: 4.97575
+  type: 'test'
+  ...
+# Subtest: closed dates prohibit sales and can be reopened
+ok 79 - closed dates prohibit sales and can be reopened
+  ---
+  duration_ms: 8.959988
+  type: 'test'
+  ...
+# Subtest: closed date rejects changes to assortment
+ok 80 - closed date rejects changes to assortment
+  ---
+  duration_ms: 5.147578
+  type: 'test'
+  ...
+# Subtest: changing list price preserves historical order prices
+ok 81 - changing list price preserves historical order prices
+  ---
+  duration_ms: 5.591646
+  type: 'test'
+  ...
+# Subtest: new orders use the changed price and item totals do not average it
+ok 82 - new orders use the changed price and item totals do not average it
+  ---
+  duration_ms: 4.937021
+  type: 'test'
+  ...
+# Subtest: editing an open preorder keeps existing price snapshots
+ok 83 - editing an open preorder keeps existing price snapshots
+  ---
+  duration_ms: 15.809124
+  type: 'test'
+  ...
+# Subtest: ordered items cannot be renamed or removed
+ok 84 - ordered items cannot be renamed or removed
+  ---
+  duration_ms: 5.113627
+  type: 'test'
+  ...
+# Subtest: same customer has at most one order per date
+ok 85 - same customer has at most one order per date
+  ---
+  duration_ms: 6.746551
+  type: 'test'
+  ...
+# Subtest: exact normalized customer duplicates are rejected
+ok 86 - exact normalized customer duplicates are rejected
+  ---
+  duration_ms: 12.425007
+  type: 'test'
+  ...
+# Subtest: same-name customers with different phones are allowed
+ok 87 - same-name customers with different phones are allowed
+  ---
+  duration_ms: 3.442725
+  type: 'test'
+  ...
+# Subtest: same customer on another date is not double-counted on first date
+ok 88 - same customer on another date is not double-counted on first date
+  ---
+  duration_ms: 4.065902
+  type: 'test'
+  ...
+# Subtest: customer filters and amount sort work
+ok 89 - customer filters and amount sort work
+  ---
+  duration_ms: 8.759608
+  type: 'test'
+  ...
+# Subtest: status filter distinguishes pending, actual and cancelled
+ok 90 - status filter distinguishes pending, actual and cancelled
+  ---
+  duration_ms: 3.072919
+  type: 'test'
+  ...
+# Subtest: demo totals match 3 people / 9 kg / EUR 139.50
+ok 91 - demo totals match 3 people / 9 kg / EUR 139.50
+  ---
+  duration_ms: 2.398395
+  type: 'test'
+  ...
+# Subtest: demo cannot mix silently with real records
+ok 92 - demo cannot mix silently with real records
+  ---
+  duration_ms: 2.107718
+  type: 'test'
+  ...
+# Subtest: commands do not mutate their input state
+ok 93 - commands do not mutate their input state
+  ---
+  duration_ms: 4.11156
+  type: 'test'
+  ...
+# Subtest: unknown schema version is refused, not reset
+ok 94 - unknown schema version is refused, not reset
+  ---
+  duration_ms: 0.754564
+  type: 'test'
+  ...
+# Subtest: broken customer reference in imported data is rejected
+ok 95 - broken customer reference in imported data is rejected
+  ---
+  duration_ms: 2.389592
+  type: 'test'
+  ...
+# Subtest: product references may not cross dates
+ok 96 - product references may not cross dates
+  ---
+  duration_ms: 3.188854
+  type: 'test'
+  ...
+# Subtest: closed status cannot hide pending imported orders
+ok 97 - closed status cannot hide pending imported orders
+  ---
+  duration_ms: 2.155791
+  type: 'test'
+  ...
+# Subtest: missing sale field is invalid, not treated as zero sale
+ok 98 - missing sale field is invalid, not treated as zero sale
+  ---
+  duration_ms: 2.213517
+  type: 'test'
+  ...
+# Subtest: NaN and fractional grams cannot enter snapshot
+ok 99 - NaN and fractional grams cannot enter snapshot
+  ---
+  duration_ms: 2.776523
+  type: 'test'
+  ...
+# Subtest: HTML-like user text is retained as text for output escaping
+ok 100 - HTML-like user text is retained as text for output escaping
+  ---
+  duration_ms: 1.321386
+  type: 'test'
+  ...
+# Subtest: Mini Local version is three; starts with no customer or demo records
+ok 101 - Mini Local version is three; starts with no customer or demo records
+  ---
+  duration_ms: 5.697294
+  type: 'test'
+  ...
+# Subtest: six requested meat groups active; rabbit and unsupported groups inactive
+ok 102 - six requested meat groups active; rabbit and unsupported groups inactive
+  ---
+  duration_ms: 3.080291
+  type: 'test'
+  ...
+# Subtest: young beef is separate from veal, with translated names and unset prices
+ok 103 - young beef is separate from veal, with translated names and unset prices
+  ---
+  duration_ms: 1.342558
+  type: 'test'
+  ...
+# Subtest: unit parses whole values: kg
+ok 104 - unit parses whole values: kg
+  ---
+  duration_ms: 0.370798
+  type: 'test'
+  ...
+# Subtest: explicit zero sale: kg
+ok 105 - explicit zero sale: kg
+  ---
+  duration_ms: 0.288664
+  type: 'test'
+  ...
+# Subtest: zero preorder refused: kg
+ok 106 - zero preorder refused: kg
+  ---
+  duration_ms: 0.723548
+  type: 'test'
+  ...
+# Subtest: unit parses whole values: piece
+ok 107 - unit parses whole values: piece
+  ---
+  duration_ms: 0.227462
+  type: 'test'
+  ...
+# Subtest: explicit zero sale: piece
+ok 108 - explicit zero sale: piece
+  ---
+  duration_ms: 0.600913
+  type: 'test'
+  ...
+# Subtest: zero preorder refused: piece
+ok 109 - zero preorder refused: piece
+  ---
+  duration_ms: 0.328995
+  type: 'test'
+  ...
+# Subtest: unit parses whole values: pack
+ok 110 - unit parses whole values: pack
+  ---
+  duration_ms: 0.273611
+  type: 'test'
+  ...
+# Subtest: explicit zero sale: pack
+ok 111 - explicit zero sale: pack
+  ---
+  duration_ms: 0.112198
+  type: 'test'
+  ...
+# Subtest: zero preorder refused: pack
+ok 112 - zero preorder refused: pack
+  ---
+  duration_ms: 0.063335
+  type: 'test'
+  ...
+# Subtest: unit parses whole values: litre
+ok 113 - unit parses whole values: litre
+  ---
+  duration_ms: 0.091027
+  type: 'test'
+  ...
+# Subtest: explicit zero sale: litre
+ok 114 - explicit zero sale: litre
+  ---
+  duration_ms: 0.045538
+  type: 'test'
+  ...
+# Subtest: zero preorder refused: litre
+ok 115 - zero preorder refused: litre
+  ---
+  duration_ms: 0.045057
+  type: 'test'
+  ...
+# Subtest: fractional discrete quantity refused: piece
+ok 116 - fractional discrete quantity refused: piece
+  ---
+  duration_ms: 0.0865
+  type: 'test'
+  ...
+# Subtest: fractional discrete quantity refused: pack
+ok 117 - fractional discrete quantity refused: pack
+  ---
+  duration_ms: 0.069415
+  type: 'test'
+  ...
+# Subtest: three decimals retained: kg
+ok 118 - three decimals retained: kg
+  ---
+  duration_ms: 0.108553
+  type: 'test'
+  ...
+# Subtest: three decimals retained: litre
+ok 119 - three decimals retained: litre
+  ---
+  duration_ms: 0.051728
+  type: 'test'
+  ...
+# Subtest: unknown units refused
+ok 120 - unknown units refused
+  ---
+  duration_ms: 0.074772
+  type: 'test'
+  ...
+# Subtest: mixed units total money but not fake kilograms
+ok 121 - mixed units total money but not fake kilograms
+  ---
+  duration_ms: 6.816587
+  type: 'test'
+  ...
+# Subtest: fractional pieces rejected inside imported order, not only input parser
+ok 122 - fractional pieces rejected inside imported order, not only input parser
+  ---
+  duration_ms: 3.42607
+  type: 'test'
+  ...
+# Subtest: an imported order cannot change its event unit
+ok 123 - an imported order cannot change its event unit
+  ---
+  duration_ms: 3.713812
+  type: 'test'
+  ...
+# Subtest: used unit cannot be changed through date editor
+ok 124 - used unit cannot be changed through date editor
+  ---
+  duration_ms: 8.846754
+  type: 'test'
+  ...
+# Subtest: catalog unit update leaves existing date and order unchanged
+ok 125 - catalog unit update leaves existing date and order unchanged
+  ---
+  duration_ms: 7.221345
+  type: 'test'
+  ...
+# Subtest: partial issue is still pending and keeps remaining prep
+ok 126 - partial issue is still pending and keeps remaining prep
+  ---
+  duration_ms: 6.77885
+  type: 'test'
+  ...
+# Subtest: partial issue appears in status filter
+ok 127 - partial issue appears in status filter
+  ---
+  duration_ms: 15.065537
+  type: 'test'
+  ...
+# Subtest: date cannot close with partial collection
+ok 128 - date cannot close with partial collection
+  ---
+  duration_ms: 6.167762
+  type: 'test'
+  ...
+# Subtest: completed below-plan collection has no remaining quantity
+ok 129 - completed below-plan collection has no remaining quantity
+  ---
+  duration_ms: 6.133009
+  type: 'test'
+  ...
+# Subtest: repeated cumulative issue replaces instead of double counts
+ok 130 - repeated cumulative issue replaces instead of double counts
+  ---
+  duration_ms: 5.737014
+  type: 'test'
+  ...
+# Subtest: extra sale is not added to original preorder
+ok 131 - extra sale is not added to original preorder
+  ---
+  duration_ms: 4.443109
+  type: 'test'
+  ...
+# Subtest: extra sale unit must respect discrete pieces
+ok 132 - extra sale unit must respect discrete pieces
+  ---
+  duration_ms: 3.793412
+  type: 'test'
+  ...
+# Subtest: extra sold item cannot be removed from date
+ok 133 - extra sold item cannot be removed from date
+  ---
+  duration_ms: 4.482168
+  type: 'test'
+  ...
+# Subtest: extra item from a different date refused
+ok 134 - extra item from a different date refused
+  ---
+  duration_ms: 4.498913
+  type: 'test'
+  ...
+# Subtest: sale starts unpaid, never inferred from collection
+ok 135 - sale starts unpaid, never inferred from collection
+  ---
+  duration_ms: 3.531999
+  type: 'test'
+  ...
+# Subtest: payment cannot be entered for preorder only
+ok 136 - payment cannot be entered for preorder only
+  ---
+  duration_ms: 2.765998
+  type: 'test'
+  ...
+# Subtest: partial payment records actual received and outstanding separately
+ok 137 - partial payment records actual received and outstanding separately
+  ---
+  duration_ms: 4.353253
+  type: 'test'
+  ...
+# Subtest: payment changes are cumulative, not added twice
+ok 138 - payment changes are cumulative, not added twice
+  ---
+  duration_ms: 5.242521
+  type: 'test'
+  ...
+# Subtest: full payment sets paid status
+ok 139 - full payment sets paid status
+  ---
+  duration_ms: 4.498112
+  type: 'test'
+  ...
+# Subtest: overpayment and negative amounts rejected
+ok 140 - overpayment and negative amounts rejected
+  ---
+  duration_ms: 3.479811
+  type: 'test'
+  ...
+# Subtest: closed date permits later payment but not changed sale
+ok 141 - closed date permits later payment but not changed sale
+  ---
+  duration_ms: 5.868091
+  type: 'test'
+  ...
+# Subtest: clear sale with payment requires explicit correction first
+ok 142 - clear sale with payment requires explicit correction first
+  ---
+  duration_ms: 6.754864
+  type: 'test'
+  ...
+# Subtest: lower sale than already received is blocked
+ok 143 - lower sale than already received is blocked
+  ---
+  duration_ms: 4.382918
+  type: 'test'
+  ...
+# Subtest: journal appends without mutating original state or old log entries
+ok 144 - journal appends without mutating original state or old log entries
+  ---
+  duration_ms: 4.244891
+  type: 'test'
+  ...
+# Subtest: audit survives encrypted backup together with payment and photo
+ok 145 - audit survives encrypted backup together with payment and photo
+  ---
+  duration_ms: 102.659147
+  type: 'test'
+  ...
+# Subtest: v2 import does not alter orders, catalog activation or dates
+ok 146 - v2 import does not alter orders, catalog activation or dates
+  ---
+  duration_ms: 3.029944
+  type: 'test'
+  ...
+# Subtest: photo allows only bounded JPEG data URIs
+ok 147 - photo allows only bounded JPEG data URIs
+  ---
+  duration_ms: 0.08687
+  type: 'test'
+  ...
+# Subtest: remote photo URI rejected on import
+ok 148 - remote photo URI rejected on import
+  ---
+  duration_ms: 0.733663
+  type: 'test'
+  ...
+# Subtest: renaming catalog without photo argument preserves existing photo
+ok 149 - renaming catalog without photo argument preserves existing photo
+  ---
+  duration_ms: 2.8539
+  type: 'test'
+  ...
+# Subtest: removing photo explicitly returns to illustration
+ok 150 - removing photo explicitly returns to illustration
+  ---
+  duration_ms: 2.198214
+  type: 'test'
+  ...
+# Subtest: draft survives repository recreation and can be discarded without touching state
+ok 151 - draft survives repository recreation and can be discarded without touching state
+  ---
+  duration_ms: 1.372063
+  type: 'test'
+  ...
+# Subtest: draft malformed JSON fails instead of overwriting confirmed data
+ok 152 - draft malformed JSON fails instead of overwriting confirmed data
+  ---
+  duration_ms: 0.170016
+  type: 'test'
+  ...
+# Subtest: password forms are not supported draft routes
+ok 153 - password forms are not supported draft routes
+  ---
+  duration_ms: 0.155593
+  type: 'test'
+  ...
+# Subtest: native draft write error is surfaced
+ok 154 - native draft write error is surfaced
+  ---
+  duration_ms: 0.104707
+  type: 'test'
+  ...
+# Subtest: customer weight sort excludes piece counts
+ok 155 - customer weight sort excludes piece counts
+  ---
+  duration_ms: 2.471555
+  type: 'test'
+  ...
+# Subtest: customer product filter includes additional actual sale
+ok 156 - customer product filter includes additional actual sale
+  ---
+  duration_ms: 8.240376
+  type: 'test'
+  ...
+# Subtest: browser repository starts at revision zero
+ok 157 - browser repository starts at revision zero
+  ---
+  duration_ms: 1.541207
+  type: 'test'
+  ...
+# Subtest: save and fresh repository load persist exact data
+ok 158 - save and fresh repository load persist exact data
+  ---
+  duration_ms: 15.211515
+  type: 'test'
+  ...
+# Subtest: compare-and-set prevents stale overwrite
+ok 159 - compare-and-set prevents stale overwrite
+  ---
+  duration_ms: 8.644605
+  type: 'test'
+  ...
+# Subtest: bad snapshot is refused before changing saved data
+ok 160 - bad snapshot is refused before changing saved data
+  ---
+  duration_ms: 3.543896
+  type: 'test'
+  ...
+# Subtest: corrupt storage is reported, not overwritten or reset
+ok 161 - corrupt storage is reported, not overwritten or reset
+  ---
+  duration_ms: 0.17947
+  type: 'test'
+  ...
+# Subtest: quota failure never acknowledges a write
+ok 162 - quota failure never acknowledges a write
+  ---
+  duration_ms: 2.969944
+  type: 'test'
+  ...
+# Subtest: native adapter maps empty native storage to empty state
+ok 163 - native adapter maps empty native storage to empty state
+  ---
+  duration_ms: 0.26652
+  type: 'test'
+  ...
+# Subtest: native adapter propagates failure codes
+ok 164 - native adapter propagates failure codes
+  ---
+  duration_ms: 3.701875
+  type: 'test'
+  ...
+# Subtest: encrypted backup round-trips names, weights, prices and all settings
+ok 165 - encrypted backup round-trips names, weights, prices and all settings
+  ---
+  duration_ms: 96.291825
+  type: 'test'
+  ...
+# Subtest: each encryption uses a fresh salt and IV
+ok 166 - each encryption uses a fresh salt and IV
+  ---
+  duration_ms: 93.387379
+  type: 'test'
+  ...
+# Subtest: wrong password is rejected
+ok 167 - wrong password is rejected
+  ---
+  duration_ms: 94.71208
+  type: 'test'
+  ...
+# Subtest: tampered authenticated ciphertext is rejected
+ok 168 - tampered authenticated ciphertext is rejected
+  ---
+  duration_ms: 92.068047
+  type: 'test'
+  ...
+# Subtest: modified IV is rejected
+ok 169 - modified IV is rejected
+  ---
+  duration_ms: 95.184611
+  type: 'test'
+  ...
+# Subtest: password length policy enforced
+ok 170 - password length policy enforced
+  ---
+  duration_ms: 4.487175
+  type: 'test'
+  ...
+# Subtest: unbounded attacker-controlled KDF work is rejected
+ok 171 - unbounded attacker-controlled KDF work is rejected
+  ---
+  duration_ms: 47.566101
+  type: 'test'
+  ...
+# Subtest: unknown backup version is rejected
+ok 172 - unknown backup version is rejected
+  ---
+  duration_ms: 45.999216
+  type: 'test'
+  ...
+# Subtest: backup invalid JSON and base64 are rejected
+ok 173 - backup invalid JSON and base64 are rejected
+  ---
+  duration_ms: 47.549667
+  type: 'test'
+  ...
+# Subtest: oversized backup is refused before parsing or derivation
+ok 174 - oversized backup is refused before parsing or derivation
+  ---
+  duration_ms: 0.254122
+  type: 'test'
+  ...
+1..174
+# tests 174
+# suites 0
+# pass 174
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 999.806925

@@ -1,0 +1,5 @@
+Downloading verified Gradle 8.13 from https://services.gradle.org/distributions/gradle-8.13-bin.zip
+BUILD NOT RUN: <urlopen error [Errno -3] Temporary failure in name resolution>
+See docs/BUILD.md. Internet is required for the first tool/dependency download.
+
+BUILD_EXIT_CODE=2

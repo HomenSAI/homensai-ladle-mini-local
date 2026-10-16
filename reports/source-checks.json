@@ -1,0 +1,87 @@
+{
+  "checksPassed": 31,
+  "checks": [
+    "XML parses: app/src/main/AndroidManifest.xml",
+    "XML parses: app/src/main/res/xml/data_extraction_rules.xml",
+    "XML parses: app/src/main/res/drawable/ic_shop.xml",
+    "XML parses: app/src/main/res/values/styles.xml",
+    "XML parses: app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+    "manifest requests no Android permissions",
+    "automatic Android backup disabled",
+    "cleartext network disabled",
+    "CSP blocks inline/external execution",
+    "all HTML script resources are local",
+    "no font files are bundled",
+    "four complete skins in CSS",
+    "German, Russian and English translation key parity",
+    "all translations are nonempty",
+    "literal UI translation references exist",
+    "JavaScript syntax: catalog-data.js",
+    "JavaScript syntax: i18n.js",
+    "JavaScript syntax: ui.js",
+    "JavaScript syntax: storage.js",
+    "JavaScript syntax: core.js",
+    "text/button token contrast >=4.5:1: light",
+    "text/button token contrast >=4.5:1: dark",
+    "text/button token contrast >=4.5:1: paper",
+    "text/button token contrast >=4.5:1: compact",
+    "SQL schema creates a readable snapshot",
+    "SQL rejects invalid singleton/revision: INSERT INTO state VALUES(2,1,'{}',1)",
+    "SQL rejects invalid singleton/revision: UPDATE state SET revision=0 WHERE id=1",
+    "SQL rollback preserves prior revision",
+    "history retention SQL preserves only newest five",
+    "JVM exact-origin/path suite",
+    "Java syntax-only parse (no Android API resolution)"
+  ],
+  "contrast": [
+    {
+      "skin": "light",
+      "text": 15.72,
+      "muted": 7.73,
+      "accent": 5.15,
+      "ok": 5.15,
+      "warn": 5.23,
+      "bad": 6.3,
+      "button": 5.34
+    },
+    {
+      "skin": "dark",
+      "text": 13.69,
+      "muted": 7.89,
+      "accent": 7.49,
+      "ok": 7.49,
+      "warn": 7.49,
+      "bad": 6.73,
+      "button": 8.29
+    },
+    {
+      "skin": "paper",
+      "text": 14.71,
+      "muted": 7.48,
+      "accent": 7.29,
+      "ok": 6.06,
+      "warn": 6.13,
+      "bad": 6.94,
+      "button": 7.73
+    },
+    {
+      "skin": "compact",
+      "text": 15.72,
+      "muted": 7.73,
+      "accent": 7.96,
+      "ok": 5.15,
+      "warn": 5.23,
+      "bad": 6.3,
+      "button": 8.27
+    }
+  ],
+  "assetPolicyOutput": "PASS 36 exact-origin/path assertions (JVM, no Android SDK)",
+  "javaParseOutput": "PASS syntax-only parse of 6 Java source files; Android types NOT checked",
+  "notCovered": [
+    "APK build",
+    "Android API type checking",
+    "Android SQLite implementation",
+    "native WebView/SAF",
+    "WCAG full audit"
+  ]
+}

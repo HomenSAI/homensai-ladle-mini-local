@@ -1,0 +1,35 @@
+PASS XML parses: app/src/main/AndroidManifest.xml
+PASS XML parses: app/src/main/res/xml/data_extraction_rules.xml
+PASS XML parses: app/src/main/res/drawable/ic_shop.xml
+PASS XML parses: app/src/main/res/values/styles.xml
+PASS XML parses: app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml
+PASS manifest requests no Android permissions
+PASS automatic Android backup disabled
+PASS cleartext network disabled
+PASS CSP blocks inline/external execution
+PASS all HTML script resources are local
+PASS no font files are bundled
+PASS four complete skins in CSS
+PASS German, Russian and English translation key parity
+PASS all translations are nonempty
+PASS literal UI translation references exist
+PASS JavaScript syntax: catalog-data.js
+PASS JavaScript syntax: i18n.js
+PASS JavaScript syntax: ui.js
+PASS JavaScript syntax: storage.js
+PASS JavaScript syntax: core.js
+PASS text/button token contrast >=4.5:1: light
+PASS text/button token contrast >=4.5:1: dark
+PASS text/button token contrast >=4.5:1: paper
+PASS text/button token contrast >=4.5:1: compact
+PASS SQL schema creates a readable snapshot
+PASS SQL rejects invalid singleton/revision: INSERT INTO state VALUES(2,1,'{}',1)
+PASS SQL rejects invalid singleton/revision: UPDATE state SET revision=0 WHERE id=1
+PASS SQL rollback preserves prior revision
+PASS history retention SQL preserves only newest five
+PASS 36 exact-origin/path assertions (JVM, no Android SDK)
+PASS JVM exact-origin/path suite
+PASS syntax-only parse of 6 Java source files; Android types NOT checked
+PASS Java syntax-only parse (no Android API resolution)
+
+31 source/schema checks passed. Android build/device tests NOT executed.

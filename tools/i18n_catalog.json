@@ -1,0 +1,312 @@
+{
+  "catalog": [
+    "Artikelkatalog",
+    "Каталог товаров",
+    "Product catalog"
+  ],
+  "catalogHint": [
+    "Vorlagen mit Bildern. Das Angebot je Termin wird separat festgelegt.",
+    "Шаблоны с картинками. Ассортимент каждой даты задаётся отдельно.",
+    "Illustrated templates. Availability is set separately for each date."
+  ],
+  "catalogSetup": [
+    "Fleischkatalog mit 77 Vorlagen hinzufügen",
+    "Добавить мясной каталог из 77 шаблонов",
+    "Add meat catalog with 77 templates"
+  ],
+  "catalogSetupHint": [
+    "Keine Preise oder Bestellungen werden automatisch angelegt.",
+    "Цены и заказы автоматически не создаются.",
+    "No prices or orders are created automatically."
+  ],
+  "catalogImages": [
+    "Schematische Illustrationen, keine Fotos der tatsächlichen Ware. Alle Mengen derzeit in kg.",
+    "Схематичные иллюстрации, не фото фактического товара. Все количества пока в кг.",
+    "Schematic illustrations, not photos of the actual goods. All quantities currently use kg."
+  ],
+  "catalogSearch": [
+    "Artikel in DE / EN / RU suchen",
+    "Найти товар на DE / EN / RU",
+    "Search products in DE / EN / RU"
+  ],
+  "category": [
+    "Warengruppe",
+    "Группа товара",
+    "Category"
+  ],
+  "allCategories": [
+    "Alle Warengruppen",
+    "Все группы",
+    "All categories"
+  ],
+  "catalogStatus": [
+    "Katalogstatus",
+    "Статус в каталоге",
+    "Catalog status"
+  ],
+  "catalogAll": [
+    "Alle außer archivierten",
+    "Все, кроме архивных",
+    "All except archived"
+  ],
+  "activeProduct": [
+    "Aktiv",
+    "Активен",
+    "Active"
+  ],
+  "inactiveProduct": [
+    "Inaktiv",
+    "Неактивен",
+    "Inactive"
+  ],
+  "archivedProduct": [
+    "Archiviert",
+    "В архиве",
+    "Archived"
+  ],
+  "activateProduct": [
+    "Aktivieren",
+    "Активировать",
+    "Activate"
+  ],
+  "deactivateProduct": [
+    "Deaktivieren",
+    "Отключить",
+    "Deactivate"
+  ],
+  "editProduct": [
+    "Bearbeiten / Umbenennen",
+    "Изменить / переименовать",
+    "Edit / rename"
+  ],
+  "newCatalogProduct": [
+    "Neuer Artikel",
+    "Новый товар",
+    "New product"
+  ],
+  "catalogPrice": [
+    "Vorlagenpreis (€ / kg), optional",
+    "Цена шаблона (€ / кг), необязательно",
+    "Template price (€ / kg), optional"
+  ],
+  "priceNotSet": [
+    "Preis nicht festgelegt",
+    "Цена не задана",
+    "Price not set"
+  ],
+  "catalogNameDE": [
+    "Name auf Deutsch *",
+    "Название на немецком *",
+    "German name *"
+  ],
+  "catalogNameEN": [
+    "Name auf Englisch",
+    "Название на английском",
+    "English name"
+  ],
+  "catalogNameRU": [
+    "Name auf Russisch",
+    "Название на русском",
+    "Russian name"
+  ],
+  "translationFallback": [
+    "Fehlende Übersetzung: deutscher Name. Bestehende Termine und Bestellungen bleiben unverändert.",
+    "Нет перевода — используется немецкое название. Старые даты и заказы не изменяются.",
+    "Missing translation falls back to German. Existing dates and orders remain unchanged."
+  ],
+  "illustration": [
+    "Illustration",
+    "Иллюстрация",
+    "Illustration"
+  ],
+  "catalogEnabled": [
+    "Für neue Termine auswählbar",
+    "Доступен для новых дат",
+    "Available for new dates"
+  ],
+  "catalogActivationHint": [
+    "Der Katalogstatus ändert keine bestehenden Termine. Dort kann der Artikel separat deaktiviert werden.",
+    "Статус каталога не меняет существующие даты. На дате товар можно отключить отдельно.",
+    "Catalog status does not change existing dates. Deactivate the item separately on a date."
+  ],
+  "deleteProduct": [
+    "Artikel löschen",
+    "Удалить товар",
+    "Delete product"
+  ],
+  "deleteProductConfirm": [
+    "Unbenutzte Vorlage endgültig löschen?",
+    "Удалить неиспользованный шаблон безвозвратно?",
+    "Permanently delete this unused template?"
+  ],
+  "archiveProductConfirm": [
+    "Dieser Artikel wird bereits verwendet. Er wird archiviert; Termine und Bestellungen bleiben erhalten.",
+    "Товар уже использован. Он будет убран в архив; даты и заказы сохранятся.",
+    "This product is already used. It will be archived; dates and orders remain intact."
+  ],
+  "restoreProduct": [
+    "Aus Archiv holen",
+    "Вернуть из архива",
+    "Restore from archive"
+  ],
+  "restoreProductHint": [
+    "Wiederhergestellte Artikel sind zunächst inaktiv.",
+    "После возврата из архива товар сначала неактивен.",
+    "Restored products are initially inactive."
+  ],
+  "restoreTemplates": [
+    "Fehlende Vorlagen ergänzen",
+    "Добавить недостающие шаблоны",
+    "Restore missing templates"
+  ],
+  "restoreTemplatesConfirm": [
+    "Fehlende Standardvorlagen ergänzen? Bearbeitete und archivierte Vorlagen bleiben unverändert.",
+    "Добавить отсутствующие стандартные шаблоны? Изменённые и архивные карточки сохранятся.",
+    "Add missing standard templates? Edited and archived templates remain unchanged."
+  ],
+  "catalogEmpty": [
+    "Keine passenden Artikel",
+    "Нет подходящих товаров",
+    "No matching products"
+  ],
+  "addFromCatalog": [
+    "Aus Katalog hinzufügen",
+    "Добавить из каталога",
+    "Add from catalog"
+  ],
+  "chooseCatalogProduct": [
+    "Artikel auswählen",
+    "Выбрать товар",
+    "Choose product"
+  ],
+  "catalogNoSelectable": [
+    "Keine weiteren aktiven Artikel verfügbar.",
+    "Нет других активных товаров.",
+    "No additional active products available."
+  ],
+  "addToDate": [
+    "Zum Termin hinzufügen",
+    "Добавить на дату",
+    "Add to date"
+  ],
+  "eventItemActive": [
+    "Neue Bestellungen für diesen Termin zulassen",
+    "Принимать новые заказы на эту дату",
+    "Allow new orders for this date"
+  ],
+  "eventItemInactiveHint": [
+    "Inaktiv: bestehende Bestellungen bleiben in der Vorbereitung.",
+    "Отключён: существующие заказы остаются в подготовке.",
+    "Inactive: existing orders remain in preparation."
+  ],
+  "error.catalog": [
+    "Ungültige Katalogdaten. Bitte Namen, Kategorie, Illustration und Preis prüfen.",
+    "Проверьте названия, группу, иллюстрацию и цену каталога.",
+    "Invalid catalog data. Check names, category, illustration and price."
+  ],
+  "error.catalogReference": [
+    "Ein verknüpfter Katalogartikel fehlt.",
+    "Связанный товар каталога отсутствует.",
+    "A linked catalog product is missing."
+  ],
+  "error.catalogPrice": [
+    "Für diesen Termin muss ein Preis eingegeben werden.",
+    "Для этой даты нужно указать цену.",
+    "Enter a price for this date."
+  ],
+  "error.inactiveItem": [
+    "Dieser Artikel ist für neue Bestellungen deaktiviert.",
+    "Этот товар отключён для новых заказов.",
+    "This product is disabled for new orders."
+  ],
+  "error.archivedProduct": [
+    "Artikel zuerst aus dem Archiv holen.",
+    "Сначала верните товар из архива.",
+    "Restore the product from the archive first."
+  ],
+  "quantityUnitNotice": [
+    "Diese Version verkauft alle Artikel nach kg, nicht pro Stück.",
+    "В этой версии все товары продаются по кг, не поштучно.",
+    "This version sells every product by kg, not per piece."
+  ],
+  "image.steak": [
+    "Steak / Filet",
+    "Стейк / филе",
+    "Steak / fillet"
+  ],
+  "image.chop": [
+    "Kotelett",
+    "Котлета на кости",
+    "Chop"
+  ],
+  "image.roast": [
+    "Bratenstück",
+    "Кусок для запекания",
+    "Roasting cut"
+  ],
+  "image.ribs": [
+    "Rippen",
+    "Рёбра",
+    "Ribs"
+  ],
+  "image.shank": [
+    "Beinscheibe",
+    "Голяшка",
+    "Shank slice"
+  ],
+  "image.mince": [
+    "Hackfleisch",
+    "Фарш",
+    "Minced meat"
+  ],
+  "image.cubes": [
+    "Fleischwürfel",
+    "Кубики мяса",
+    "Diced meat"
+  ],
+  "image.wholebird": [
+    "Ganzes Geflügel",
+    "Целая птица",
+    "Whole bird"
+  ],
+  "image.breast": [
+    "Brust",
+    "Грудка",
+    "Breast"
+  ],
+  "image.drumstick": [
+    "Keule",
+    "Ножка",
+    "Leg"
+  ],
+  "image.wing": [
+    "Flügel",
+    "Крылья",
+    "Wings"
+  ],
+  "image.offal": [
+    "Innereien",
+    "Субпродукты",
+    "Offal"
+  ],
+  "image.bone": [
+    "Knochen",
+    "Кости",
+    "Bones"
+  ],
+  "image.sausage": [
+    "Wurst",
+    "Колбаса",
+    "Sausage"
+  ],
+  "image.fish": [
+    "Fisch",
+    "Рыба",
+    "Fish"
+  ],
+  "image.other": [
+    "Weiteres Produkt",
+    "Другой продукт",
+    "Other product"
+  ]
+}

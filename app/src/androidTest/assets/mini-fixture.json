@@ -1,0 +1,1430 @@
+{
+  "schemaVersion": 3,
+  "shop": {
+    "name": "Mini test shop",
+    "owner": "Tester",
+    "street": "",
+    "zip": "",
+    "city": "",
+    "phone": "",
+    "email": "",
+    "hours": "",
+    "currency": "EUR",
+    "language": "en",
+    "skin": "compact"
+  },
+  "events": [
+    {
+      "id": "a733eb25772b44d18c2802f03688cb52",
+      "date": "2026-10-23",
+      "time": "",
+      "title": "Local test",
+      "note": "",
+      "closed": false,
+      "items": [
+        {
+          "id": "e8b1cfe7242f4b58bfc6e0774455d676",
+          "name": "Beef",
+          "price": 1500,
+          "unit": "kg",
+          "active": true
+        },
+        {
+          "id": "947d5ca055f44e6cb92040869ab027b8",
+          "name": "Chicken",
+          "price": 1250,
+          "unit": "piece",
+          "active": true
+        },
+        {
+          "id": "d5f8515fe8284ddc857475b50a34f93a",
+          "name": "Eggs",
+          "price": 400,
+          "unit": "pack",
+          "active": true
+        }
+      ]
+    }
+  ],
+  "customers": [
+    {
+      "id": "fdadf80c5a1548e4a615806dbca9e66c",
+      "firstName": "",
+      "lastName": "Synthetic",
+      "phone": "",
+      "note": ""
+    }
+  ],
+  "orders": [
+    {
+      "id": "ff688a66b48d40e5872d31b39fb37af2",
+      "eventId": "a733eb25772b44d18c2802f03688cb52",
+      "customerId": "fdadf80c5a1548e4a615806dbca9e66c",
+      "lines": [
+        {
+          "itemId": "e8b1cfe7242f4b58bfc6e0774455d676",
+          "name": "Beef",
+          "unit": "kg",
+          "grams": 1500,
+          "price": 1500
+        },
+        {
+          "itemId": "947d5ca055f44e6cb92040869ab027b8",
+          "name": "Chicken",
+          "unit": "piece",
+          "grams": 2000,
+          "price": 1250
+        }
+      ],
+      "note": "",
+      "cancelled": false,
+      "sale": {
+        "recordedAt": "2026-10-16T05:57:39.058Z",
+        "complete": false,
+        "lines": [
+          {
+            "itemId": "e8b1cfe7242f4b58bfc6e0774455d676",
+            "grams": 1200,
+            "price": 1500,
+            "unit": "kg",
+            "name": "Beef"
+          },
+          {
+            "itemId": "947d5ca055f44e6cb92040869ab027b8",
+            "grams": 1000,
+            "price": 1250,
+            "unit": "piece",
+            "name": "Chicken"
+          },
+          {
+            "itemId": "d5f8515fe8284ddc857475b50a34f93a",
+            "grams": 1000,
+            "price": 400,
+            "unit": "pack",
+            "name": "Eggs"
+          }
+        ]
+      },
+      "createdAt": "2026-10-16T05:57:39.056Z",
+      "updatedAt": "2026-10-16T05:57:39.058Z",
+      "payment": {
+        "amount": 1000,
+        "method": "cash",
+        "at": "2026-10-16T05:57:39.059Z"
+      }
+    }
+  ],
+  "catalog": [
+    {
+      "id": "tpl-young-beef-1",
+      "category": "young_beef",
+      "imageKey": "steak",
+      "names": {
+        "de": "Jungrind · Rinderfilet",
+        "en": "Young beef · Beef fillet",
+        "ru": "Молодая говядина · Говяжья вырезка"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-young-beef-2",
+      "category": "young_beef",
+      "imageKey": "steak",
+      "names": {
+        "de": "Jungrind · Rumpsteak",
+        "en": "Young beef · Rump steak",
+        "ru": "Молодая говядина · Рамп-стейк"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-young-beef-3",
+      "category": "young_beef",
+      "imageKey": "steak",
+      "names": {
+        "de": "Jungrind · Entrecôte / Rib-Eye",
+        "en": "Young beef · Rib-eye steak",
+        "ru": "Молодая говядина · Рибай"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-young-beef-4",
+      "category": "young_beef",
+      "imageKey": "chop",
+      "names": {
+        "de": "Jungrind · T-Bone-Steak",
+        "en": "Young beef · T-bone steak",
+        "ru": "Молодая говядина · Ти-бон"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-young-beef-5",
+      "category": "young_beef",
+      "imageKey": "roast",
+      "names": {
+        "de": "Jungrind · Rinderschulter",
+        "en": "Young beef · Beef shoulder",
+        "ru": "Молодая говядина · Говяжья лопатка"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-young-beef-6",
+      "category": "young_beef",
+      "imageKey": "roast",
+      "names": {
+        "de": "Jungrind · Rinderbrust",
+        "en": "Young beef · Beef brisket",
+        "ru": "Молодая говядина · Говяжья грудинка"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-young-beef-7",
+      "category": "young_beef",
+      "imageKey": "shank",
+      "names": {
+        "de": "Jungrind · Rinderbeinscheibe",
+        "en": "Young beef · Beef shank slice",
+        "ru": "Молодая говядина · Говяжья голяшка"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-young-beef-8",
+      "category": "young_beef",
+      "imageKey": "cubes",
+      "names": {
+        "de": "Jungrind · Rindergulasch",
+        "en": "Young beef · Diced beef",
+        "ru": "Молодая говядина · Говядина для гуляша"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-young-beef-9",
+      "category": "young_beef",
+      "imageKey": "mince",
+      "names": {
+        "de": "Jungrind · Rinderhackfleisch",
+        "en": "Young beef · Minced beef",
+        "ru": "Молодая говядина · Говяжий фарш"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-young-beef-10",
+      "category": "young_beef",
+      "imageKey": "ribs",
+      "names": {
+        "de": "Jungrind · Rinderrippen",
+        "en": "Young beef · Beef ribs",
+        "ru": "Молодая говядина · Говяжьи рёбра"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-young-beef-11",
+      "category": "young_beef",
+      "imageKey": "steak",
+      "names": {
+        "de": "Jungrind · Rinderrouladen",
+        "en": "Young beef · Beef roulade slices",
+        "ru": "Молодая говядина · Говядина для рулетов"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-young-beef-12",
+      "category": "young_beef",
+      "imageKey": "offal",
+      "names": {
+        "de": "Jungrind · Rinderleber",
+        "en": "Young beef · Beef liver",
+        "ru": "Молодая говядина · Говяжья печень"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-young-beef-13",
+      "category": "young_beef",
+      "imageKey": "offal",
+      "names": {
+        "de": "Jungrind · Rinderzunge",
+        "en": "Young beef · Beef tongue",
+        "ru": "Молодая говядина · Говяжий язык"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-young-beef-14",
+      "category": "young_beef",
+      "imageKey": "bone",
+      "names": {
+        "de": "Jungrind · Suppenknochen vom Rind",
+        "en": "Young beef · Beef soup bones",
+        "ru": "Молодая говядина · Говяжьи суповые кости"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-beef-1",
+      "category": "beef",
+      "imageKey": "steak",
+      "names": {
+        "de": "Rinderfilet",
+        "en": "Beef fillet",
+        "ru": "Говяжья вырезка"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-beef-2",
+      "category": "beef",
+      "imageKey": "steak",
+      "names": {
+        "de": "Rumpsteak",
+        "en": "Rump steak",
+        "ru": "Рамп-стейк"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-beef-3",
+      "category": "beef",
+      "imageKey": "steak",
+      "names": {
+        "de": "Entrecôte / Rib-Eye",
+        "en": "Rib-eye steak",
+        "ru": "Рибай"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-beef-4",
+      "category": "beef",
+      "imageKey": "chop",
+      "names": {
+        "de": "T-Bone-Steak",
+        "en": "T-bone steak",
+        "ru": "Ти-бон"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-beef-5",
+      "category": "beef",
+      "imageKey": "roast",
+      "names": {
+        "de": "Rinderschulter",
+        "en": "Beef shoulder",
+        "ru": "Говяжья лопатка"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-beef-6",
+      "category": "beef",
+      "imageKey": "roast",
+      "names": {
+        "de": "Rinderbrust",
+        "en": "Beef brisket",
+        "ru": "Говяжья грудинка"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-beef-7",
+      "category": "beef",
+      "imageKey": "shank",
+      "names": {
+        "de": "Rinderbeinscheibe",
+        "en": "Beef shank slice",
+        "ru": "Говяжья голяшка"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-beef-8",
+      "category": "beef",
+      "imageKey": "cubes",
+      "names": {
+        "de": "Rindergulasch",
+        "en": "Diced beef",
+        "ru": "Говядина для гуляша"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-beef-9",
+      "category": "beef",
+      "imageKey": "mince",
+      "names": {
+        "de": "Rinderhackfleisch",
+        "en": "Minced beef",
+        "ru": "Говяжий фарш"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-beef-10",
+      "category": "beef",
+      "imageKey": "ribs",
+      "names": {
+        "de": "Rinderrippen",
+        "en": "Beef ribs",
+        "ru": "Говяжьи рёбра"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-beef-11",
+      "category": "beef",
+      "imageKey": "steak",
+      "names": {
+        "de": "Rinderrouladen",
+        "en": "Beef roulade slices",
+        "ru": "Говядина для рулетов"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-beef-12",
+      "category": "beef",
+      "imageKey": "offal",
+      "names": {
+        "de": "Rinderleber",
+        "en": "Beef liver",
+        "ru": "Говяжья печень"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-beef-13",
+      "category": "beef",
+      "imageKey": "offal",
+      "names": {
+        "de": "Rinderzunge",
+        "en": "Beef tongue",
+        "ru": "Говяжий язык"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-beef-14",
+      "category": "beef",
+      "imageKey": "bone",
+      "names": {
+        "de": "Suppenknochen vom Rind",
+        "en": "Beef soup bones",
+        "ru": "Говяжьи суповые кости"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-veal-1",
+      "category": "veal",
+      "imageKey": "steak",
+      "names": {
+        "de": "Kalbsfilet",
+        "en": "Veal fillet",
+        "ru": "Телячья вырезка"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-veal-2",
+      "category": "veal",
+      "imageKey": "steak",
+      "names": {
+        "de": "Kalbsschnitzel",
+        "en": "Veal schnitzel",
+        "ru": "Телячий шницель"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-veal-3",
+      "category": "veal",
+      "imageKey": "chop",
+      "names": {
+        "de": "Kalbskotelett",
+        "en": "Veal chop",
+        "ru": "Телячья котлета на кости"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-veal-4",
+      "category": "veal",
+      "imageKey": "shank",
+      "names": {
+        "de": "Kalbsbeinscheibe / Osso buco",
+        "en": "Veal shank slice",
+        "ru": "Телячья голяшка / оссобуко"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-veal-5",
+      "category": "veal",
+      "imageKey": "roast",
+      "names": {
+        "de": "Kalbsschulter",
+        "en": "Veal shoulder",
+        "ru": "Телячья лопатка"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-veal-6",
+      "category": "veal",
+      "imageKey": "offal",
+      "names": {
+        "de": "Kalbsleber",
+        "en": "Veal liver",
+        "ru": "Телячья печень"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-pork-1",
+      "category": "pork",
+      "imageKey": "roast",
+      "names": {
+        "de": "Schweinenacken",
+        "en": "Pork neck",
+        "ru": "Свиной ошеек"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-pork-2",
+      "category": "pork",
+      "imageKey": "steak",
+      "names": {
+        "de": "Schweinefilet",
+        "en": "Pork tenderloin",
+        "ru": "Свиная вырезка"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-pork-3",
+      "category": "pork",
+      "imageKey": "steak",
+      "names": {
+        "de": "Schweineschnitzel",
+        "en": "Pork schnitzel",
+        "ru": "Свиной шницель"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-pork-4",
+      "category": "pork",
+      "imageKey": "chop",
+      "names": {
+        "de": "Schweinekotelett",
+        "en": "Pork chop",
+        "ru": "Свиная котлета на кости"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-pork-5",
+      "category": "pork",
+      "imageKey": "roast",
+      "names": {
+        "de": "Schweinebauch",
+        "en": "Pork belly",
+        "ru": "Свиная грудинка"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-pork-6",
+      "category": "pork",
+      "imageKey": "roast",
+      "names": {
+        "de": "Schweineschulter",
+        "en": "Pork shoulder",
+        "ru": "Свиная лопатка"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-pork-7",
+      "category": "pork",
+      "imageKey": "shank",
+      "names": {
+        "de": "Schweinshaxe",
+        "en": "Pork knuckle",
+        "ru": "Свиная рулька"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-pork-8",
+      "category": "pork",
+      "imageKey": "ribs",
+      "names": {
+        "de": "Schweinerippchen",
+        "en": "Pork ribs",
+        "ru": "Свиные рёбра"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-pork-9",
+      "category": "pork",
+      "imageKey": "cubes",
+      "names": {
+        "de": "Schweinegulasch",
+        "en": "Diced pork",
+        "ru": "Свинина для гуляша"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-pork-10",
+      "category": "pork",
+      "imageKey": "mince",
+      "names": {
+        "de": "Schweinehackfleisch",
+        "en": "Minced pork",
+        "ru": "Свиной фарш"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-pork-11",
+      "category": "pork",
+      "imageKey": "offal",
+      "names": {
+        "de": "Schweineleber",
+        "en": "Pork liver",
+        "ru": "Свиная печень"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-lamb-1",
+      "category": "lamb",
+      "imageKey": "roast",
+      "names": {
+        "de": "Lammkeule",
+        "en": "Leg of lamb",
+        "ru": "Баранья нога"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-lamb-2",
+      "category": "lamb",
+      "imageKey": "roast",
+      "names": {
+        "de": "Lammschulter",
+        "en": "Lamb shoulder",
+        "ru": "Баранья лопатка"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-lamb-3",
+      "category": "lamb",
+      "imageKey": "ribs",
+      "names": {
+        "de": "Lammkarree",
+        "en": "Rack of lamb",
+        "ru": "Каре ягнёнка"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-lamb-4",
+      "category": "lamb",
+      "imageKey": "chop",
+      "names": {
+        "de": "Lammkotelett",
+        "en": "Lamb chop",
+        "ru": "Баранья котлета на кости"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-lamb-5",
+      "category": "lamb",
+      "imageKey": "chop",
+      "names": {
+        "de": "Lamm-Doppelkotelett",
+        "en": "Lamb double loin chop",
+        "ru": "Двойная баранья котлета"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-lamb-6",
+      "category": "lamb",
+      "imageKey": "roast",
+      "names": {
+        "de": "Lammhals ohne Knochen",
+        "en": "Boneless lamb neck",
+        "ru": "Баранья шея без кости"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-lamb-7",
+      "category": "lamb",
+      "imageKey": "shank",
+      "names": {
+        "de": "Lammhaxe",
+        "en": "Lamb shank",
+        "ru": "Баранья голяшка"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-lamb-8",
+      "category": "lamb",
+      "imageKey": "mince",
+      "names": {
+        "de": "Lammhackfleisch",
+        "en": "Minced lamb",
+        "ru": "Бараний фарш"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-lamb-9",
+      "category": "lamb",
+      "imageKey": "offal",
+      "names": {
+        "de": "Lammleber",
+        "en": "Lamb liver",
+        "ru": "Баранья печень"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-goat-1",
+      "category": "goat",
+      "imageKey": "roast",
+      "names": {
+        "de": "Ziegenkeule",
+        "en": "Goat leg",
+        "ru": "Козья нога"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-goat-2",
+      "category": "goat",
+      "imageKey": "roast",
+      "names": {
+        "de": "Ziegenschulter",
+        "en": "Goat shoulder",
+        "ru": "Козья лопатка"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-goat-3",
+      "category": "goat",
+      "imageKey": "cubes",
+      "names": {
+        "de": "Ziegengulasch",
+        "en": "Diced goat",
+        "ru": "Козлятина для гуляша"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-chicken-1",
+      "category": "chicken",
+      "imageKey": "wholebird",
+      "names": {
+        "de": "Ganzes Hähnchen",
+        "en": "Whole chicken",
+        "ru": "Целая курица"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-chicken-2",
+      "category": "chicken",
+      "imageKey": "breast",
+      "names": {
+        "de": "Hähnchenbrust",
+        "en": "Chicken breast",
+        "ru": "Куриная грудка"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-chicken-3",
+      "category": "chicken",
+      "imageKey": "drumstick",
+      "names": {
+        "de": "Hähnchenschenkel",
+        "en": "Chicken leg",
+        "ru": "Куриный окорочок"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-chicken-4",
+      "category": "chicken",
+      "imageKey": "drumstick",
+      "names": {
+        "de": "Hähnchenunterkeule",
+        "en": "Chicken drumstick",
+        "ru": "Куриная голень"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-chicken-5",
+      "category": "chicken",
+      "imageKey": "wing",
+      "names": {
+        "de": "Hähnchenflügel",
+        "en": "Chicken wings",
+        "ru": "Куриные крылья"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-chicken-6",
+      "category": "chicken",
+      "imageKey": "offal",
+      "names": {
+        "de": "Hähnchenleber",
+        "en": "Chicken liver",
+        "ru": "Куриная печень"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-chicken-7",
+      "category": "chicken",
+      "imageKey": "bone",
+      "names": {
+        "de": "Hähnchenkarkasse",
+        "en": "Chicken carcass",
+        "ru": "Куриный суповой набор"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-turkey-1",
+      "category": "turkey",
+      "imageKey": "wholebird",
+      "names": {
+        "de": "Ganze Pute",
+        "en": "Whole turkey",
+        "ru": "Целая индейка"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-turkey-2",
+      "category": "turkey",
+      "imageKey": "breast",
+      "names": {
+        "de": "Putenbrust",
+        "en": "Turkey breast",
+        "ru": "Грудка индейки"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-turkey-3",
+      "category": "turkey",
+      "imageKey": "drumstick",
+      "names": {
+        "de": "Putenkeule",
+        "en": "Turkey leg",
+        "ru": "Окорочок индейки"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-turkey-4",
+      "category": "turkey",
+      "imageKey": "steak",
+      "names": {
+        "de": "Putenschnitzel",
+        "en": "Turkey schnitzel",
+        "ru": "Шницель из индейки"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-duck-1",
+      "category": "duck",
+      "imageKey": "wholebird",
+      "names": {
+        "de": "Ganze Ente",
+        "en": "Whole duck",
+        "ru": "Целая утка"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-duck-2",
+      "category": "duck",
+      "imageKey": "breast",
+      "names": {
+        "de": "Entenbrust",
+        "en": "Duck breast",
+        "ru": "Утиная грудка"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-duck-3",
+      "category": "duck",
+      "imageKey": "drumstick",
+      "names": {
+        "de": "Entenkeule",
+        "en": "Duck leg",
+        "ru": "Утиный окорочок"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-goose-1",
+      "category": "goose",
+      "imageKey": "wholebird",
+      "names": {
+        "de": "Ganze Gans",
+        "en": "Whole goose",
+        "ru": "Целый гусь"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-goose-2",
+      "category": "goose",
+      "imageKey": "breast",
+      "names": {
+        "de": "Gänsebrust",
+        "en": "Goose breast",
+        "ru": "Гусиная грудка"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-goose-3",
+      "category": "goose",
+      "imageKey": "drumstick",
+      "names": {
+        "de": "Gänsekeule",
+        "en": "Goose leg",
+        "ru": "Гусиный окорочок"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-rabbit-1",
+      "category": "rabbit",
+      "imageKey": "roast",
+      "names": {
+        "de": "Ganzes Kaninchen",
+        "en": "Whole rabbit",
+        "ru": "Целый кролик"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-rabbit-2",
+      "category": "rabbit",
+      "imageKey": "drumstick",
+      "names": {
+        "de": "Kaninchenkeule",
+        "en": "Rabbit leg",
+        "ru": "Ножка кролика"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-venison-1",
+      "category": "venison",
+      "imageKey": "roast",
+      "names": {
+        "de": "Hirschkeule",
+        "en": "Venison leg",
+        "ru": "Оленья нога"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-venison-2",
+      "category": "venison",
+      "imageKey": "steak",
+      "names": {
+        "de": "Hirschrücken",
+        "en": "Venison loin",
+        "ru": "Оленья корейка"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-venison-3",
+      "category": "venison",
+      "imageKey": "cubes",
+      "names": {
+        "de": "Hirschgulasch",
+        "en": "Diced venison",
+        "ru": "Оленина для гуляша"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-venison-4",
+      "category": "venison",
+      "imageKey": "roast",
+      "names": {
+        "de": "Rehkeule",
+        "en": "Roe deer leg",
+        "ru": "Нога косули"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-boar-1",
+      "category": "boar",
+      "imageKey": "roast",
+      "names": {
+        "de": "Wildschweinkeule",
+        "en": "Wild boar leg",
+        "ru": "Окорок кабана"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-boar-2",
+      "category": "boar",
+      "imageKey": "roast",
+      "names": {
+        "de": "Wildschweinschulter",
+        "en": "Wild boar shoulder",
+        "ru": "Лопатка кабана"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-boar-3",
+      "category": "boar",
+      "imageKey": "cubes",
+      "names": {
+        "de": "Wildschweingulasch",
+        "en": "Diced wild boar",
+        "ru": "Кабан для гуляша"
+      },
+      "defaultPrice": null,
+      "active": true,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-fish-1",
+      "category": "fish",
+      "imageKey": "fish",
+      "names": {
+        "de": "Ganze Forelle",
+        "en": "Whole trout",
+        "ru": "Целая форель"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-fish-2",
+      "category": "fish",
+      "imageKey": "fish",
+      "names": {
+        "de": "Lachsfilet",
+        "en": "Salmon fillet",
+        "ru": "Филе лосося"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-fish-3",
+      "category": "fish",
+      "imageKey": "fish",
+      "names": {
+        "de": "Karpfen",
+        "en": "Carp",
+        "ru": "Карп"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-prepared-1",
+      "category": "prepared",
+      "imageKey": "sausage",
+      "names": {
+        "de": "Bratwurst",
+        "en": "Fresh sausage",
+        "ru": "Колбаски для жарки"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-prepared-2",
+      "category": "prepared",
+      "imageKey": "sausage",
+      "names": {
+        "de": "Räucherwurst",
+        "en": "Smoked sausage",
+        "ru": "Копчёная колбаса"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-prepared-3",
+      "category": "prepared",
+      "imageKey": "mince",
+      "names": {
+        "de": "Hackfleisch gemischt",
+        "en": "Mixed minced meat",
+        "ru": "Смешанный фарш"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-prepared-4",
+      "category": "prepared",
+      "imageKey": "cubes",
+      "names": {
+        "de": "Mariniertes Grillfleisch",
+        "en": "Marinated barbecue meat",
+        "ru": "Маринованное мясо для гриля"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    },
+    {
+      "id": "tpl-other-1",
+      "category": "other",
+      "imageKey": "other",
+      "names": {
+        "de": "Eigenes Produkt",
+        "en": "Custom product",
+        "ru": "Свой продукт"
+      },
+      "defaultPrice": null,
+      "active": false,
+      "archived": false,
+      "unit": "kg"
+    }
+  ],
+  "audit": [
+    {
+      "id": "fee90ed89a0f4ec5befb93ac830fec4b",
+      "at": "2026-10-16T05:57:39.050Z",
+      "action": "setup",
+      "actor": "Tester",
+      "detail": "shop; catalog:tpl-young-beef-1; catalog:tpl-young-beef-2; catalog:tpl-young-beef-3; catalog:tpl-young-beef-4; catalog:tpl-young-beef-5; catalog:tpl-young-beef-6; catalog:tpl-young-beef-7; catalog:tpl-young-beef-8; catalog:tpl-young-beef-9; catalog:tpl-young-beef-10; catalog:tpl-young-beef-11; catalog:tpl-young-beef-12; catalog:tpl-young-beef-13; catalog:tpl-young-beef-14; catalog:tpl-beef-1; catalog:tpl-beef-2; catalog:tpl-beef-3; catalog:tpl-beef-4; catalog:tpl-beef-5; catalog:tpl-beef-6; catalog:tpl-beef-7; catalog:tpl-beef-8; catalog:tpl-beef-9; catalog:tpl-beef-10; catalog:tpl-beef-11; catalog:tpl-beef-12; catalog:tpl-beef-13; catalog:tpl-beef-14; catalog:tpl-veal-1; catalog:tpl-veal-2; catalog:tpl-veal-3; catalog:tpl-veal-4; catalog:tpl-veal-5; catalog:tpl-veal-6; catalog:tpl-pork-1; catalog:tpl-pork-2; catalog:tpl-pork-3; catalog:tpl-pork-4; catalog:tpl-pork-5; catalog:tpl-pork-6; catalog:tpl-pork-7; catalog:tpl-pork-8; catalog:tpl-pork-9; catalog:tpl-pork-10; catalog:tpl-pork-11; catalog:tpl-lamb-1; catalog:tpl-lamb-2; catalog:tpl-lamb-3; catalog:tpl-lamb-4; catalog:tpl-lamb-5; catalog:tpl-lamb-6; catalog:tpl-lamb-7; catalog:tpl-lamb-8; catalog:tpl-lamb-9; catalog:tpl-goat-1"
+    },
+    {
+      "id": "5cf886085b2e4e8bbd2ad6e5bf72eea9",
+      "at": "2026-10-16T05:57:39.055Z",
+      "action": "saveEvent",
+      "actor": "Tester",
+      "detail": "events:a733eb25772b44d18c2802f03688cb52"
+    },
+    {
+      "id": "dfbf282222d84b94a27b59de5adec430",
+      "at": "2026-10-16T05:57:39.057Z",
+      "action": "saveOrder",
+      "actor": "Tester",
+      "detail": "customers:fdadf80c5a1548e4a615806dbca9e66c; orders:ff688a66b48d40e5872d31b39fb37af2 plan=4750 sale=0 paid=0"
+    },
+    {
+      "id": "38595156ea5c43fc8c02f33335ff17ec",
+      "at": "2026-10-16T05:57:39.058Z",
+      "action": "saveSale",
+      "actor": "Tester",
+      "detail": "orders:ff688a66b48d40e5872d31b39fb37af2 plan=4750 sale=3450 paid=0"
+    },
+    {
+      "id": "7080d43f383743bd98a1e5b1cb2a5541",
+      "at": "2026-10-16T05:57:39.060Z",
+      "action": "savePayment",
+      "actor": "Tester",
+      "detail": "orders:ff688a66b48d40e5872d31b39fb37af2 plan=4750 sale=3450 paid=1000"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+PASS wizard initially asks for shop data
+PASS wizard blocks empty required shop name
+PASS three-step wizard saves contacts and chosen skin without demo orders
+PASS create a date with two products and German decimal prices
+PASS create buyer and multi-item order with live EUR 42 total
+PASS sale weights start empty and blank fields cannot be recorded
+PASS actual sale at 1.8 kg records EUR 27 and preserves 2 kg preorder
+PASS date totals and per-product allocations show plan and actual separately
+PASS completed date can be closed and editing controls disappear
+PASS closed date can be reopened explicitly
+PASS copy assortment creates an empty independent date
+PASS date dropdown restores only that date’s totals
+PASS no horizontal overflow at 412px
+PASS fresh UI instance reloads the exact saved snapshot
+PASS demo date displays three complete customer cards
+PASS demo totals display EUR 139.50
+PASS name search filters customer cards without losing input focus
+PASS product filter finds only customers ordering that product
+PASS descending amount sort puts highest order first
+PASS cancelled order stays visible but is excluded from totals
+PASS restoring a cancelled order restores preparation totals
+PASS closing a date with pending orders shows an explanation
+PASS unsaved edits require explicit discard and are not silently saved
+PASS duplicate customer error preserves all saved orders
+PASS light skin persists and renders both views without changing data
+PASS dark skin persists and renders both views without changing data
+PASS paper skin persists and renders both views without changing data
+PASS compact skin persists and renders both views without changing data
+PASS Russian UI can be selected without changing orders
+PASS English UI can be selected without changing orders
+PASS customer and product views fit 320px viewport
+PASS customer and product views fit 360px viewport
+PASS customer and product views fit 800px viewport
+PASS 150% text scaling does not introduce horizontal scrolling
+PASS HTML-like shop and customer names are displayed as text, not executed
+PASS corrupted browser snapshot is not deleted or silently reset
+PASS no JavaScript errors in all completed UI scenarios
+{
+  "mode": "offline injected assets + in-memory localStorage",
+  "passed": 37,
+  "failed": 0,
+  "pageErrors": [],
+  "notCovered": [
+    "Android APK compilation",
+    "Android WebView runtime",
+    "native SQLite",
+    "native Storage Access Framework"
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "version": "0.3.0",
+  "mode": "Desktop Chromium / actual preview hash CSP / memory storage / NOT Android",
+  "passed": 38,
+  "failed": 0,
+  "pageErrors": [],
+  "fatalError": null,
+  "tests": [
+    {
+      "name": "wizard offers translated catalog opt-in, without automatic prices",
+      "status": "passed"
+    },
+    {
+      "name": "setup adds 91 templates and no dates or customer records",
+      "status": "passed"
+    },
+    {
+      "name": "catalog renders 40 illustrated cards initially",
+      "status": "passed"
+    },
+    {
+      "name": "51 active cards can be displayed",
+      "status": "passed"
+    },
+    {
+      "name": "all 91 templates remain available",
+      "status": "passed"
+    },
+    {
+      "name": "category filter returns nine lamb cuts",
+      "status": "passed"
+    },
+    {
+      "name": "Russian product search works in German interface",
+      "status": "passed"
+    },
+    {
+      "name": "rename and decimal comma template price save",
+      "status": "passed"
+    },
+    {
+      "name": "deactivate card persists inactive status",
+      "status": "passed"
+    },
+    {
+      "name": "inactive filter shows deactivated card",
+      "status": "passed"
+    },
+    {
+      "name": "activate card persists active status",
+      "status": "passed"
+    },
+    {
+      "name": "catalog readable at 360px: de, light",
+      "status": "passed"
+    },
+    {
+      "name": "catalog readable at 360px: de, dark",
+      "status": "passed"
+    },
+    {
+      "name": "catalog readable at 360px: de, paper",
+      "status": "passed"
+    },
+    {
+      "name": "catalog readable at 360px: de, compact",
+      "status": "passed"
+    },
+    {
+      "name": "catalog readable at 360px: en, light",
+      "status": "passed"
+    },
+    {
+      "name": "catalog readable at 360px: en, dark",
+      "status": "passed"
+    },
+    {
+      "name": "catalog readable at 360px: en, paper",
+      "status": "passed"
+    },
+    {
+      "name": "catalog readable at 360px: en, compact",
+      "status": "passed"
+    },
+    {
+      "name": "catalog readable at 360px: ru, light",
+      "status": "passed"
+    },
+    {
+      "name": "catalog readable at 360px: ru, dark",
+      "status": "passed"
+    },
+    {
+      "name": "catalog readable at 360px: ru, paper",
+      "status": "passed"
+    },
+    {
+      "name": "catalog readable at 360px: ru, compact",
+      "status": "passed"
+    },
+    {
+      "name": "catalog 320px with 150% text has no horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "name": "date picker takes the catalog price",
+      "status": "passed"
+    },
+    {
+      "name": "date draft includes product illustration",
+      "status": "passed"
+    },
+    {
+      "name": "date stores a frozen catalog snapshot",
+      "status": "passed"
+    },
+    {
+      "name": "order uses exact snapshot price 1.5 kg x 45 euro",
+      "status": "passed"
+    },
+    {
+      "name": "renaming and repricing master preserves old order and date",
+      "status": "passed"
+    },
+    {
+      "name": "deletion of used product archives it and keeps order",
+      "status": "passed"
+    },
+    {
+      "name": "archived card remains discoverable",
+      "status": "passed"
+    },
+    {
+      "name": "restore from archive returns an inactive template",
+      "status": "passed"
+    },
+    {
+      "name": "inactive dated article cannot start new order",
+      "status": "passed"
+    },
+    {
+      "name": "deactivation retains 1.5kg preparation and visible illustration",
+      "status": "passed"
+    },
+    {
+      "name": "actual sale still works for deactivated product",
+      "status": "passed"
+    },
+    {
+      "name": "custom product names render as literal text, not executable markup",
+      "status": "passed"
+    },
+    {
+      "name": "unused custom product really deletes",
+      "status": "passed"
+    },
+    {
+      "name": "no JavaScript exceptions in catalog scenarios",
+      "status": "passed"
+    }
+  ]
+}
