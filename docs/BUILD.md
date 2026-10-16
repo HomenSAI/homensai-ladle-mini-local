@@ -73,7 +73,15 @@ bash tools/run_device_tests.sh
 
 Нужен запущенный Android-эмулятор/тестовое устройство с подходящим System WebView. Собственный `DeviceTests` проверяет настоящую SQLite, конфликт ревизий, отказ от испорченной записи, ограничение истории, повторное открытие базы и запуск WebView с bridge. Его служебная база отдельная, рабочая база не очищается. 25 тестов подготовлены, **в данном пакете результатов их запуска нет**.
 
-`.github/workflows/android.yml` содержит сборку и матрицу эмуляторов API 35/36. На GitHub workflow ещё не запускался. Не считать наличие YAML подтверждением зелёной CI. Исходники и настройки workflow не отправлялись в удалённый репозиторий.
+`.github/workflows/android.yml` содержит сборку и матрицу эмуляторов API 35/36. Исходники и workflow уже опубликованы в GitHub, но подтверждения запуска CI пока нет. Сам файл YAML не доказывает успешную сборку.
+
+### CI and source publication / CI und Veröffentlichung / CI и публикация
+
+**EN:** The source project and Android workflow are published in the public GitHub repository. No successful GitHub Actions run has been verified. A workflow file alone is not evidence of a passing build.
+
+**DE:** Quellprojekt und Android-Workflow sind im öffentlichen GitHub-Repository veröffentlicht. Ein erfolgreicher GitHub-Actions-Lauf wurde nicht bestätigt. Eine Workflow-Datei allein belegt keinen erfolgreichen Build.
+
+**RU:** Исходный проект и Android workflow опубликованы в публичном репозитории GitHub. Успешный запуск GitHub Actions не подтверждён. Наличие workflow-файла само по себе не подтверждает успешную сборку.
 
 ## Рабочая release-подпись
 

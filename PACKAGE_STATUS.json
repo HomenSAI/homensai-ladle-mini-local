@@ -1,5 +1,6 @@
 {
   "product": "HomenS.AI Lädle Mini Local",
+  "repositorySlug": "homensai-ladle-mini-local",
   "version": "0.3.0",
   "schemaVersion": 3,
   "sqliteVersion": 2,

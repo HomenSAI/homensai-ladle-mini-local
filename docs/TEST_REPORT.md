@@ -39,6 +39,14 @@
 
 25 `DeviceTests`: SQLite save/CAS/history/reopen, v1/v2/v3 валидация, миграция DB1→2, draft на диске, восстановление испорченного head, discrete units, переплата, запрет закрытой частичной выдачи, JPEG import и лимиты, запуск упакованного WebView. Тестовые базы/пиксели отдельные, реальные заказы не стираются. Матрица API35/36 в GitHub workflow только подготовлена; удалённый запуск не выполнялся.
 
+## Git setup verification · 2026-10-16
+
+**EN:** `npm run check` passed. All 174 Node tests passed when loaded in one process; the standard `npm test` command hit Windows `spawn EPERM`. The source checker passed 31 checks, then stopped because `javac` is unavailable. Browser suites could not start because Python Playwright is not installed. Android build/device tests were not run.
+
+**DE:** `npm run check` war erfolgreich. Alle 174 Node-Tests bestanden beim Laden in einem Prozess; der Standardbefehl `npm test` scheiterte unter Windows mit `spawn EPERM`. Der Source-Checker bestand 31 Prüfungen und stoppte danach, weil `javac` fehlt. Browser-Suiten starteten nicht, da Python Playwright nicht installiert ist. Android-Build und Gerätetests wurden nicht ausgeführt.
+
+**RU:** `npm run check` завершился успешно. Все 174 Node-теста прошли при загрузке в одном процессе; штатная команда `npm test` столкнулась с Windows `spawn EPERM`. Проверка исходников прошла 31 пункт и остановилась из-за отсутствия `javac`. Браузерные наборы не запустились: модуль Python Playwright не установлен. Сборка Android и тесты на устройстве не выполнялись.
+
 ## Журналы
 
 `reports/node-tests.txt`, `ui-tests.json/txt`, `catalog-ui-tests.json/txt`, `mini-ui-tests.json/txt`, `preview-tests.json/txt`, `source-checks.json/txt`. Снимки PNG сняты с исполняющегося Chromium; это не нарисованные прототипы и не скриншоты виртуального Android.

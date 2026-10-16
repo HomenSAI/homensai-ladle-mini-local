@@ -8,7 +8,7 @@
 
 Это исходный Android-проект и самостоятельная браузерная демонстрация, **не готовый установочный APK**. APK и Android Lint не запускались: SDK/Gradle/эмулятор отсутствуют, загрузка Gradle закончилась DNS-ошибкой. Виртуальный и реальный Android не проверены. Не использовать реальные клиентские данные до Android-приёмки.
 
-**Начните с `START_HERE_RU.md`.** Краткие руководства: `docs/USER_GUIDE_RU.md`, `docs/USER_GUIDE_DE.md`, `docs/USER_GUIDE_EN.md`. Стандарт локализации разработки: `docs/LOCALIZATION.md`. Браузерная демонстрация: `preview/Laedle-preview.html`. Тесты: `docs/TEST_REPORT.md`; установка после сборки: `docs/BUILD.md`; проверка телефона: `docs/ACCEPTANCE.md`.
+**Начните с `START_HERE_RU.md`.** Краткие руководства: `docs/USER_GUIDE_RU.md`, `docs/USER_GUIDE_DE.md`, `docs/USER_GUIDE_EN.md`. Стандарт локализации: `docs/LOCALIZATION.md`; Git-процесс: `docs/GIT_WORKFLOW.md`. Браузерная демонстрация: `preview/Laedle-preview.html`. Тесты: `docs/TEST_REPORT.md`; сборка: `docs/BUILD.md`; приёмка телефона: `docs/ACCEPTANCE.md`.
 
 ## Возможности
 
