@@ -1,8 +1,8 @@
 PASS XML parses: app/src/main/AndroidManifest.xml
-PASS XML parses: app/src/main/res/xml/data_extraction_rules.xml
 PASS XML parses: app/src/main/res/drawable/ic_shop.xml
-PASS XML parses: app/src/main/res/values/styles.xml
 PASS XML parses: app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml
+PASS XML parses: app/src/main/res/values/styles.xml
+PASS XML parses: app/src/main/res/xml/data_extraction_rules.xml
 PASS manifest requests no Android permissions
 PASS automatic Android backup disabled
 PASS cleartext network disabled
@@ -12,12 +12,14 @@ PASS no font files are bundled
 PASS four complete skins in CSS
 PASS German, Russian and English translation key parity
 PASS all translations are nonempty
+PASS mini UI translations have complete EN/DE/RU values
+PASS built-in catalog names have complete EN/DE/RU translations
 PASS literal UI translation references exist
 PASS JavaScript syntax: catalog-data.js
-PASS JavaScript syntax: i18n.js
-PASS JavaScript syntax: ui.js
-PASS JavaScript syntax: storage.js
 PASS JavaScript syntax: core.js
+PASS JavaScript syntax: i18n.js
+PASS JavaScript syntax: storage.js
+PASS JavaScript syntax: ui.js
 PASS text/button token contrast >=4.5:1: light
 PASS text/button token contrast >=4.5:1: dark
 PASS text/button token contrast >=4.5:1: paper
@@ -32,4 +34,4 @@ PASS JVM exact-origin/path suite
 PASS syntax-only parse of 6 Java source files; Android types NOT checked
 PASS Java syntax-only parse (no Android API resolution)
 
-31 source/schema checks passed. Android build/device tests NOT executed.
+33 source/schema checks passed. Android build/device tests NOT executed.

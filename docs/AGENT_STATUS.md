@@ -4,7 +4,7 @@
 
 | Task | Executor | Branch | Status | Evidence / blocker |
 |---|---|---|---|---|
-| Gitea-first Git setup and canonical rename to `homensai-ladle-mini-local` | Codex | `feature/git-workflow` | In progress; Gitea blocked | GitHub `main` is verified at `f36c479`; local setup commit `dacc536` is on this feature branch. Gitea service responds, but the repository list requires sign-in; no Gitea remote or push is verified. Windows reports the workspace directory is in use, so the physical directory still has the prior umlaut spelling. |
+| Gitea-first Git setup and canonical name `homensai-ladle-mini-local` | Codex | `feature/git-workflow` | Configured and verified | Private Gitea repository `localadmin/homensai-ladle-mini-local`, existing SSH key, Gitea upstream and secondary GitHub remote verified. PR #1 records delivery. Canonical checkout: `C:\homensai\homensai-ladle-mini-local`; original locked workspace preserved. Checks: 174 Node, 33 source, 115 browser; Android build/device acceptance remains unverified. |
 
 No customer data or credentials belong in this file. Update the row when authentication, push, PR, or merge state changes.
 
@@ -12,7 +12,7 @@ No customer data or credentials belong in this file. Update the row when authent
 
 | Aufgabe | Ausführung | Branch | Status | Nachweis / Hindernis |
 |---|---|---|---|---|
-| Gitea-zuerst-Git-Einrichtung und Umbenennung in `homensai-ladle-mini-local` | Codex | `feature/git-workflow` | In Arbeit; Gitea blockiert | GitHub-`main` ist auf `f36c479` bestätigt; der lokale Setup-Commit `dacc536` liegt auf diesem Feature-Branch. Gitea antwortet, aber die Repositoryliste verlangt eine Anmeldung; Gitea-Remote und Push sind nicht bestätigt. Windows meldet den Workspace-Ordner als belegt; der Ordner hat noch die bisherige Umlaut-Schreibweise. |
+| Gitea-zuerst-Git-Einrichtung und kanonischer Name `homensai-ladle-mini-local` | Codex | `feature/git-workflow` | Eingerichtet und geprüft | Privates Gitea-Repository `localadmin/homensai-ladle-mini-local`, vorhandener SSH-Schlüssel, Gitea-Upstream und sekundäres GitHub-Remote bestätigt. PR #1 dokumentiert die Lieferung. Kanonischer Checkout: `C:\homensai\homensai-ladle-mini-local`; bisheriger belegter Workspace bleibt erhalten. Prüfungen: 174 Node, 33 Source, 115 Browser; Android-Build und Geräteabnahme sind nicht bestätigt. |
 
 Keine Kundendaten oder Zugangsdaten in dieser Datei speichern. Den Eintrag bei Änderungen an Anmeldung, Push, PR oder Merge aktualisieren.
 
@@ -20,6 +20,6 @@ Keine Kundendaten oder Zugangsdaten in dieser Datei speichern. Den Eintrag bei �
 
 | Задача | Исполнитель | Ветка | Статус | Подтверждение / препятствие |
 |---|---|---|---|---|
-| Настройка Git с Gitea как основным сервером и переименование в `homensai-ladle-mini-local` | Codex | `feature/git-workflow` | В работе; Gitea заблокирована входом | `main` в GitHub подтверждена на `f36c479`; локальный коммит настройки `dacc536` находится в feature-ветке. Gitea отвечает, но список репозиториев требует авторизации; remote Gitea и отправка не подтверждены. Windows сообщает, что папка занята; физическое имя папки пока содержит прежнюю букву с умлаутом. |
+| Настройка Git с Gitea как основным сервером и каноническое имя `homensai-ladle-mini-local` | Codex | `feature/git-workflow` | Настроено и проверено | Подтверждены приватный репозиторий Gitea `localadmin/homensai-ladle-mini-local`, существующий SSH-ключ, upstream Gitea и дополнительный remote GitHub. Поставка оформлена PR №1. Каноническая копия: `C:\homensai\homensai-ladle-mini-local`; старая занятая папка сохранена. Проверки: 174 Node, 33 исходников, 115 браузерных; сборка Android и приёмка на устройстве не подтверждены. |
 
 Не записывать в этот файл данные покупателей и учётные данные. Обновлять строку при изменении статуса входа, push, PR или merge.

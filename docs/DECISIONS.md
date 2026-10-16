@@ -1,5 +1,11 @@
 # Architecture and repository decisions / Architektur- und Repository-Entscheidungen / Архитектурные решения и решения по репозиторию
 
+**EN:** The verified local Gitea administrator is `localadmin`. Use its private repository and the existing SSH key. No new user account or private key was created. Keep the original workspace intact and use the canonical checkout `C:\homensai\homensai-ladle-mini-local`.
+
+**DE:** Der bestätigte lokale Gitea-Administrator ist `localadmin`. Sein privates Repository und der vorhandene SSH-Schlüssel werden verwendet. Kein neues Benutzerkonto oder privater Schlüssel wurde erstellt. Der bisherige Workspace bleibt erhalten; der kanonische Checkout ist `C:\homensai\homensai-ladle-mini-local`.
+
+**RU:** Проверенный локальный администратор Gitea — `localadmin`. Используются его приватный репозиторий и существующий SSH-ключ. Новый аккаунт и закрытый ключ не создавались. Исходная папка сохраняется, каноническая рабочая копия — `C:\homensai\homensai-ladle-mini-local`.
+
 ## English (EN)
 
 - Canonical repository/project slug: `homensai-ladle-mini-local`. Keep the user-facing product name “HomenS.AI — Lädle Mini Local”.

@@ -21,12 +21,13 @@
     "mini": 36,
     "preview": 4
   },
-  "sourceChecks": 31,
+  "sourceChecks": 33,
   "latestVerification": {
-    "nodeTests": "174 passed when loaded in one process; npm test was blocked by spawn EPERM",
-    "sourceChecks": "31 checks passed; remaining Java checks were blocked because javac is unavailable",
-    "browserSuites": "Not run: Python Playwright module is not installed",
-    "gitWorkflow": "PowerShell syntax checks passed; local status script passed; Gitea authentication and sync are pending"
+    "nodeTests": "npm test: 174 passed, 0 failed in isolated Docker checker",
+    "sourceChecks": "33 passed, including desktop SQLite, JVM origin checks and Java syntax parsing",
+    "browserSuites": "regression 37, catalog 38, mini 36, preview 4: all passed in desktop Chromium, not Android",
+    "gitWorkflow": "PowerShell syntax passed; private Gitea repository and existing SSH key verified; canonical local checkout restored",
+    "androidCi": "GitHub run 38865921724 failed during Android SDK setup; APK build and device job were skipped"
   },
   "translationKeys": 331,
   "catalogTemplates": 91,

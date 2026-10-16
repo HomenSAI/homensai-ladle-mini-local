@@ -1,12 +1,5 @@
-Current environment (fresh inspection)
-openjdk version "21.0.12.1" 2026-08-18
-OpenJDK Runtime Environment (build 21.0.12.1+1-1-deb13u1-Debian)
-OpenJDK 64-Bit Server VM (build 21.0.12.1+1-1-deb13u1-Debian, mixed mode, sharing)
-v22.16.0
-Python 3.13.5
-gradle: NOT INSTALLED
-sdkmanager: NOT INSTALLED
-adb: NOT INSTALLED
-emulator: NOT INSTALLED
-ANDROID_HOME=not set
-ANDROID_SDK_ROOT=not set
+v22.11.0
+Python 3.11.2
+javac 17.0.20.1
+Chromium 155.0.8059.39 built on Debian GNU/Linux 12 (bookworm)
+Desktop Chromium tests; Android SDK/build/device tests are not covered by this image.

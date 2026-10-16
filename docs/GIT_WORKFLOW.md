@@ -1,10 +1,21 @@
 # Git workflow / Git-Arbeitsablauf / Порядок работы с Git
 
+| Remote | Verified URL |
+|---|---|
+| `gitea` (primary) | `ssh://git@localhost:2223/localadmin/homensai-ladle-mini-local.git` |
+| `github` (secondary) | `https://github.com/HomenSAI/homensai-ladle-mini-local.git` |
+
+**EN:** Canonical checkout: `C:\homensai\homensai-ladle-mini-local`. The original umlaut-named workspace is retained because it was in use. The existing Gitea account is `localadmin`; the old task's `Homensai-Rent` account does not exist. Windows `git-check.ps1` uses Docker by default and checks a disposable copy with networking disabled. Use `-Native` only when all host dependencies are installed.
+
+**DE:** Kanonischer Checkout: `C:\homensai\homensai-ladle-mini-local`. Der bisherige Workspace mit Umlaut bleibt erhalten, da er verwendet wurde. Das vorhandene Gitea-Konto heißt `localadmin`; `Homensai-Rent` aus der alten Aufgabe existiert nicht. Unter Windows nutzt `git-check.ps1` standardmäßig Docker und prüft eine temporäre Kopie ohne Netzwerk. `-Native` nur mit vollständig installierten Host-Abhängigkeiten verwenden.
+
+**RU:** Каноническая рабочая копия: `C:\homensai\homensai-ladle-mini-local`. Старая папка с умлаутом сохранена, поскольку была занята. Существующий аккаунт Gitea — `localadmin`; указанный в старом задании `Homensai-Rent` отсутствует. В Windows `git-check.ps1` по умолчанию использует Docker и проверяет временную копию без сети. Параметр `-Native` использовать только при установленных зависимостях на компьютере.
+
 ## English (EN)
 
 ### Remotes and branches
 
-- `gitea` is the primary remote. Get its clone URL from the authenticated repository page; never guess it. The repository owner is `Homensai-Rent`, with canonical slug `homensai-ladle-mini-local`.
+- `gitea` is the primary remote. Get its clone URL from the authenticated repository page; never guess it. The repository owner is `localadmin`, with canonical slug `homensai-ladle-mini-local`.
 - `github` is secondary: `https://github.com/HomenSAI/homensai-ladle-mini-local.git`.
 - `main` is stable. Use `feature/<topic>`, `fix/<topic>`, and `release/<version>` branches. Review and merge substantial changes through a Gitea pull request.
 - Work locally if GitHub is unavailable. Do not force-push, mirror, rewrite shared history, or delete unfinished branches.
@@ -30,7 +41,7 @@ Keep `applicationId` unchanged. Use SemVer in `versionName`, increase `versionCo
 
 ### Remotes und Branches
 
-- `gitea` ist das primäre Remote. Die Klon-URL von der angemeldeten Repositoryseite übernehmen, nicht erraten. Eigentümer ist `Homensai-Rent`, der kanonische Slug `homensai-ladle-mini-local`.
+- `gitea` ist das primäre Remote. Die Klon-URL von der angemeldeten Repositoryseite übernehmen, nicht erraten. Eigentümer ist `localadmin`, der kanonische Slug `homensai-ladle-mini-local`.
 - `github` ist sekundär: `https://github.com/HomenSAI/homensai-ladle-mini-local.git`.
 - `main` bleibt stabil. Für Änderungen `feature/<thema>`, `fix/<thema>` und `release/<version>` verwenden. Größere Änderungen über einen Gitea-Pull-Request prüfen und zusammenführen.
 - Bei nicht verfügbarem GitHub lokal weiterarbeiten. Kein Force-Push, Mirror, Umschreiben gemeinsamer Historie oder automatisches Löschen unfertiger Branches.
@@ -56,7 +67,7 @@ Push-Skripte stoppen bei Fehlern, verlangen einen sauberen Arbeitsbaum und verwe
 
 ### Remotes и ветки
 
-- `gitea` — основной remote. Clone URL брать с авторизованной страницы репозитория, не угадывать. Владелец — `Homensai-Rent`, канонический slug — `homensai-ladle-mini-local`.
+- `gitea` — основной remote. Clone URL брать с авторизованной страницы репозитория, не угадывать. Владелец — `localadmin`, канонический slug — `homensai-ladle-mini-local`.
 - `github` — дополнительный: `https://github.com/HomenSAI/homensai-ladle-mini-local.git`.
 - `main` — стабильная ветка. Использовать `feature/<тема>`, `fix/<тема>`, `release/<версия>`. Существенные изменения проверять и объединять через Pull Request в Gitea.
 - Если GitHub недоступен, продолжать локально. Не делать force push, mirror, переписывание общей истории и автоматическое удаление незавершённых веток.

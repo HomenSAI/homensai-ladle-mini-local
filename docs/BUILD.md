@@ -77,11 +77,11 @@ bash tools/run_device_tests.sh
 
 ### CI and source publication / CI und Veröffentlichung / CI и публикация
 
-**EN:** The source project and Android workflow are published in the public GitHub repository. No successful GitHub Actions run has been verified. A workflow file alone is not evidence of a passing build.
+**EN:** The source project and Android workflow are published in the public GitHub repository. GitHub Actions run 38865921724 failed at Android SDK setup before compilation; no successful Android build is verified. A workflow file alone is not evidence of a passing build.
 
-**DE:** Quellprojekt und Android-Workflow sind im öffentlichen GitHub-Repository veröffentlicht. Ein erfolgreicher GitHub-Actions-Lauf wurde nicht bestätigt. Eine Workflow-Datei allein belegt keinen erfolgreichen Build.
+**DE:** Quellprojekt und Android-Workflow sind im öffentlichen GitHub-Repository veröffentlicht. GitHub-Actions-Lauf 38865921724 scheiterte bei der Android-SDK-Einrichtung vor der Kompilierung; ein erfolgreicher Android-Build ist nicht bestätigt. Eine Workflow-Datei allein belegt keinen erfolgreichen Build.
 
-**RU:** Исходный проект и Android workflow опубликованы в публичном репозитории GitHub. Успешный запуск GitHub Actions не подтверждён. Наличие workflow-файла само по себе не подтверждает успешную сборку.
+**RU:** Исходный проект и Android workflow опубликованы в публичном репозитории GitHub. GitHub Actions 38865921724 остановился на настройке Android SDK до компиляции; успешная сборка Android не подтверждена. Наличие workflow-файла само по себе не подтверждает успешную сборку.
 
 ## Рабочая release-подпись
 

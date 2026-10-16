@@ -1,0 +1,11 @@
+.git
+.gradle
+.tools
+**/build
+node_modules
+**/__pycache__
+*.db
+*.jks
+*.keystore
+.env*
+reports
