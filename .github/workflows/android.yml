@@ -9,7 +9,23 @@ concurrency:
   group: android-${{ github.ref }}
   cancel-in-progress: true
 jobs:
+  source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - run: docker build -f tools/Dockerfile.check -t homensai-ladle-mini-local:check .
+      - run: docker run --rm --network none --shm-size=512m --mount "type=bind,source=$GITHUB_WORKSPACE,target=/workspace" homensai-ladle-mini-local:check
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: Mini-Local-source-checks
+          path: reports/
+          if-no-files-found: error
   build:
+    needs: source
     runs-on: ubuntu-latest
     timeout-minutes: 25
     steps:
@@ -26,8 +42,6 @@ jobs:
           gradle-version: '8.13'
       - uses: android-actions/setup-android@v3
       - run: sdkmanager 'platforms;android-36' 'build-tools;35.0.0'
-      - run: npm test
-      - run: python3 tools/check.py
       - run: gradle --no-daemon :app:lintDebug :app:assembleDebug :app:assembleDebugAndroidTest
       - uses: actions/upload-artifact@v4
         if: always()

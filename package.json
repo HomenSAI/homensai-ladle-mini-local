@@ -1,5 +1,5 @@
 {
-  "name": "homensai-laedle-mini-local",
+  "name": "homensai-ladle-mini-local",
   "version": "0.3.0",
   "private": true,
   "description": "Offline order book for the L\u00e4dle farm shop. Android + dependency-free UI.",

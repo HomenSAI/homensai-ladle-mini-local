@@ -10,6 +10,7 @@ Ein Offline-Bestellbuch für das Telefon oder Tablet eines Hofladens. Kein Serve
 
 - Benutzerhandbuch: [English](docs/USER_GUIDE_EN.md) · [Deutsch](docs/USER_GUIDE_DE.md) · [Русский](docs/USER_GUIDE_RU.md)
 - Lokalisierungsstandard für die Entwicklung: [docs/LOCALIZATION.md](docs/LOCALIZATION.md)
+- Gitea-zuerst-Git-Arbeitsablauf: [docs/GIT_WORKFLOW.md](docs/GIT_WORKFLOW.md)
 - Browser-Vorschau: [preview/Laedle-preview.html](preview/Laedle-preview.html)
 - Build/Installation: [docs/BUILD.md](docs/BUILD.md); Geräteabnahme: [docs/ACCEPTANCE.md](docs/ACCEPTANCE.md)
 - Testnachweise und Einschränkungen: [docs/TEST_REPORT.md](docs/TEST_REPORT.md)

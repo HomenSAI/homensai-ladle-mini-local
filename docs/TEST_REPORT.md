@@ -9,7 +9,7 @@
 | `tests/catalog_ui_test.py` | **38 passed** | Chromium, настоящий hash-CSP preview, тестовая память |
 | `tests/mini_ui_test.py` | **36 passed** | Chromium, units/partial/extras/payment/draft/photo, тестовая память |
 | `tests/preview_test.py` | **4 passed** | Автономный HTML и его CSP |
-| `tools/check.py` | **31 passed** | Исходники, XML, переводы, desktop SQLite и JVM |
+| `tools/check.py` | **33 passed** | Исходники, XML, переводы, desktop SQLite и JVM |
 | APK / Android Lint | **НЕ ВЫПОЛНЕНЫ** | Загрузка Gradle не удалась; SDK отсутствует |
 | Android emulator / native instrumentation | **НЕ ВЫПОЛНЕНЫ** | adb/emulator/SDK отсутствуют |
 
@@ -38,6 +38,14 @@
 ## Подготовлено, но не выполнено
 
 25 `DeviceTests`: SQLite save/CAS/history/reopen, v1/v2/v3 валидация, миграция DB1→2, draft на диске, восстановление испорченного head, discrete units, переплата, запрет закрытой частичной выдачи, JPEG import и лимиты, запуск упакованного WebView. Тестовые базы/пиксели отдельные, реальные заказы не стираются. Матрица API35/36 в GitHub workflow только подготовлена; удалённый запуск не выполнялся.
+
+## Git setup verification · 2026-10-16
+
+**EN:** The isolated Docker checker completed the standard `npm test`: 174 passed. Source/schema/JVM checks: 33 passed. Desktop Chromium suites: 37 regression, 38 catalog, 36 Mini Local, 4 preview checks; all passed without network access. Earlier Windows dependency limitations were resolved through this checker. PowerShell syntax and secret scanning passed. Android build/device tests were not run; GitHub run `38865921724` failed at SDK setup before compilation.
+
+**DE:** Der isolierte Docker-Checker führte den Standardbefehl `npm test` erfolgreich aus: 174 bestanden. Source-/Schema-/JVM-Prüfungen: 33 bestanden. Desktop-Chromium-Suiten: 37 Regression, 38 Katalog, 36 Mini Local, 4 Vorschauprüfungen; alle ohne Netzwerkzugriff bestanden. Frühere Windows-Abhängigkeitsprobleme wurden durch diesen Checker gelöst. PowerShell-Syntax und Geheimnisscan bestanden. Android-Build und Gerätetests wurden nicht ausgeführt; GitHub-Lauf `38865921724` scheiterte bei der SDK-Einrichtung vor der Kompilierung.
+
+**RU:** Изолированный Docker-набор выполнил штатный `npm test`: 174 теста прошли. Проверки исходников/схемы/JVM: 33 прошли. Наборы desktop Chromium: 37 регрессионных, 38 каталога, 36 Mini Local, 4 preview; все прошли без доступа к сети. Прежние ограничения зависимостей Windows устранены этим набором. Синтаксис PowerShell и поиск секретов проверены. Сборка Android и тесты устройства не выполнялись; GitHub-запуск `38865921724` остановился при настройке SDK до компиляции.
 
 ## Журналы
 

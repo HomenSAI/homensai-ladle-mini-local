@@ -1,5 +1,6 @@
-Downloading verified Gradle 8.13 from https://services.gradle.org/distributions/gradle-8.13-bin.zip
-BUILD NOT RUN: <urlopen error [Errno -3] Temporary failure in name resolution>
-See docs/BUILD.md. Internet is required for the first tool/dependency download.
-
-BUILD_EXIT_CODE=2
+GitHub Actions run: https://github.com/HomenSAI/homensai-ladle-mini-local/actions/runs/38865921724
+Commit: f36c47946597a27bd7d8b9d498e3ddbf407a7e6c
+Result: failure at android-actions/setup-android@v3.
+Gradle compilation and device job: skipped.
+Local Docker checker: no Android SDK; Android build/device tests not executed.
+No APK has been produced or verified.

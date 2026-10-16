@@ -10,6 +10,7 @@ An offline order book for one farm shop phone or tablet. No server, account, sub
 
 - User guide: [English](docs/USER_GUIDE_EN.md) · [Deutsch](docs/USER_GUIDE_DE.md) · [Русский](docs/USER_GUIDE_RU.md)
 - Development localization standard: [docs/LOCALIZATION.md](docs/LOCALIZATION.md)
+- Local Gitea-first Git workflow: [docs/GIT_WORKFLOW.md](docs/GIT_WORKFLOW.md)
 - Browser preview: [preview/Laedle-preview.html](preview/Laedle-preview.html)
 - Build/install: [docs/BUILD.md](docs/BUILD.md); device acceptance: [docs/ACCEPTANCE.md](docs/ACCEPTANCE.md)
 - Test evidence and limitations: [docs/TEST_REPORT.md](docs/TEST_REPORT.md)

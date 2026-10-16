@@ -21,5 +21,5 @@ html=html.replace('<head>','<head>\n<meta http-equiv="Content-Security-Policy" c
 html=html.replace('</head>','<style>'+css+'</style>\n</head>')
 html=html.replace('</body>','\n'.join('<script>'+script+'</script>' for script in scripts)+'\n</body>')
 html=html.replace('<title>Lädle · HomenS.AI</title>','<title>Lädle · Browser-Vorschau · HomenS.AI</title>')
-(OUT/'Laedle-preview.html').write_text(html,encoding='utf-8')
+(OUT/'Laedle-preview.html').write_text('\n'.join(line.rstrip() for line in html.splitlines())+'\n',encoding='utf-8')
 print(OUT/'Laedle-preview.html')
