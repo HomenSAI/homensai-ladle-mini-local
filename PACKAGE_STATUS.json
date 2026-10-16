@@ -25,7 +25,8 @@
   "latestVerification": {
     "nodeTests": "174 passed when loaded in one process; npm test was blocked by spawn EPERM",
     "sourceChecks": "31 checks passed; remaining Java checks were blocked because javac is unavailable",
-    "browserSuites": "Not run: Python Playwright module is not installed"
+    "browserSuites": "Not run: Python Playwright module is not installed",
+    "gitWorkflow": "PowerShell syntax checks passed; local status script passed; Gitea authentication and sync are pending"
   },
   "translationKeys": 331,
   "catalogTemplates": 91,
