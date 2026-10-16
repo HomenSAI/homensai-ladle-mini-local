@@ -11,6 +11,12 @@
 
 **RU:** Каноническая рабочая копия: `C:\homensai\homensai-ladle-mini-local`. Старая папка с умлаутом сохранена, поскольку была занята. Существующий аккаунт Gitea — `localadmin`; указанный в старом задании `Homensai-Rent` отсутствует. В Windows `git-check.ps1` по умолчанию использует Docker и проверяет временную копию без сети. Параметр `-Native` использовать только при установленных зависимостях на компьютере.
 
+**EN:** `SHA256SUMS.txt` describes the source files produced by `git archive`, including the line endings declared by `.gitattributes`. Regenerate it from the staged archive when files change.
+
+**DE:** `SHA256SUMS.txt` beschreibt die von `git archive` erzeugten Quelldateien einschließlich der in `.gitattributes` festgelegten Zeilenenden. Bei Dateiänderungen aus dem vorgemerkten Archiv neu erzeugen.
+
+**RU:** `SHA256SUMS.txt` описывает исходные файлы из `git archive`, включая окончания строк из `.gitattributes`. При изменениях пересчитывать его по архиву из индекса Git.
+
 ## English (EN)
 
 ### Remotes and branches
